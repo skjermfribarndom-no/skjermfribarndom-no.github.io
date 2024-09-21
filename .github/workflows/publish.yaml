@@ -1,0 +1,33 @@
+name: Publish Hugo to GitHub pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 0.134.3
+          extended: true
+      - name: Build
+        run: hugo --minify
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+      - uses: actions/deploy-pages@v4
+        id: deploy

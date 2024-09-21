@@ -1,0 +1,9 @@
+baseURL = 'http://example.org/'
+languageCode = 'no'
+title = 'Skjermfri barndom'
+theme = 'ananke'
+defaultContentLanguage = 'no'
+
+[params]
+  description = "Skjermfri barndom"
+  custom_css = ["site.css"]
