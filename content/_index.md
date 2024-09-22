@@ -1,5 +1,5 @@
 ---
-title: "Hva er skjermfri barndom"
+title: "Vi tror barndommen er for kort til å bruke bak en skjerm"
 
 description: "Vent til ungdomskolen"
 theme_version: '2.8.2'
