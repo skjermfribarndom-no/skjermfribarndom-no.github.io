@@ -12,7 +12,7 @@ Mange barn får sin første smarttelefon allerede i [8-årsalderen](https://www.
 
 Når du signerer løftet, lover du å vente med å gi barnet ditt en smarttelefon til slutten av 8. klasse, forutsatt at minst 8 andre familier fra samme klasse gjør det samme.
 
-Signer løftet i dag, og vær med på å skape en barndom fri fra smarttelefonens distraksjoner. (link til løftet?)
+[Signer løftet](/pledge) i dag, og vær med på å skape en barndom fri fra smarttelefonens distraksjoner.
 
 *Skjermfri Barndom er et prosjekt drevet av Skjermfri Norge.*
 
