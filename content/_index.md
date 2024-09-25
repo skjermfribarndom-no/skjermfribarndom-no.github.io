@@ -2,7 +2,7 @@
 title: "Skjermfri barndom"
 description: "Vi tror barndommen er for kort til å brukes bak en skjerm"
 cascade:
-  featured_image: '/images/Group-of-children-enjoying-drama-club-rehearsal.-They-are-reading-script-with-their-drama-teacher.-1601514686_7952x5304.jpeg'
+  featured_image: '/images/Group-of-kids-playing-tug-of-war-1406874569_8659x5773.jpeg'
 ---
 Vi hjelper foreldre med å ta informerte valg om å vente med å gi barn smarttelefon.  Målet vårt er å samle foreldre i hele Norge som vil utsette tidlig bruk av smarttelefoner, og skape et fellesskap som gjør det lettere å stå imot presset.
 
