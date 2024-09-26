@@ -6,8 +6,10 @@ featured_image: '/images/Little-boy-hiking-in-the-forest-on-a-early-spring.-Kid-
 ---
 **Løftet lanseres 1. november!**
 
-Mens du venter, kan du registrere deg på vårt nyhetsbrev for å få en påminnelse når løftet åpner, samt oppdatert informasjon om initiativet. Vi sender kun noen få e-poster i året, og vi lover å ikke spamme deg. Din e-postadresse vil kun bli brukt til kommunikasjon fra Skjermfri Barndom, og vil ikke deles med tredjeparter. Du kan når som helst melde deg av nyhetsbrevet.
+Vi jobber med å lansere signering av løftet, og dersom du vil holde deg oppdatert, kan du sende oss en e-post for å motta mer informasjon. Vi sender kun noen få e-poster i året, og vi lover å ikke spamme deg. Din e-postadresse vil kun bli brukt til kommunikasjon fra Skjermfri Barndom, og vil ikke deles med tredjeparter. Du kan når som helst be om å bli fjernet fra vår e-postliste.
 
-Vi oppfordrer deg til å snakke med andre foreldre i klassen, slik at dere er klare til å signere sammen. Når minst 8 personer fra samme klasse signerer samtidig, aktiveres løftet umiddelbart. Deres klasse eller skole får da muligheten til å vises på vår oversikt over de som har sluttet seg til initiativet.
+Vi oppfordrer deg også til å snakke med andre foreldre i klassen, slik at dere er klare til å signere sammen når løftet åpner. Når minst 8 personer fra samme klasse signerer samtidig, aktiveres løftet umiddelbart, og deres klasse eller skole får muligheten til å vises på vår oversikt over de som har sluttet seg til initiativet.
 
 Under fanen "Ressurser" finner du stadig flere verktøy som kan hjelpe deg i samtaler med andre foreldre.
+
+Send oss en e-post på [skjermfri@gmail.com](mailto:skjermfri@gmail.com?subject=Vent+til+ungdomsskolen) for å motta mer informasjon. Merk emnefeltet med «Vent til ungdomsskolen».
