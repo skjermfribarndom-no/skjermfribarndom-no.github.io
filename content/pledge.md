@@ -12,4 +12,4 @@ Vi oppfordrer deg også til å snakke med andre foreldre i klassen, slik at dere
 
 Under fanen "Ressurser" finner du stadig flere verktøy som kan hjelpe deg i samtaler med andre foreldre.
 
-Send oss en e-post på [skjermfri@gmail.com](mailto:skjermfri@gmail.com?subject=Vent+til+ungdomsskolen) for å motta mer informasjon. Merk emnefeltet med «Vent til ungdomsskolen».
+Send oss en e-post på [skjermfri@gmail.com](mailto:skjermfri@gmail.com?subject=Vent til ungdomsskolen) for å motta mer informasjon. Merk emnefeltet med «Vent til ungdomsskolen».
