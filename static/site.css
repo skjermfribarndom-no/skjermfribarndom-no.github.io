@@ -6,3 +6,7 @@ button {
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.bg-black-60 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
