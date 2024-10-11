@@ -1,0 +1,110 @@
+<form
+  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPN-jm9LLRYuBe66fruALFa_F-UM9o8tt23LcbhP-mrFeNpw/formResponse"
+  method="POST"
+  onsubmit="onSubmitted()"
+>
+  <p>
+    <label>
+      Navn på foresatte:
+      <br />
+      <input type="text" name="entry.89046536" required>
+    </label>
+  </p>
+  <p>
+    <label>
+      Epost foresatte:
+      <br />
+      <input type="email" name="entry.1607245198" required>
+    </label>
+  </p>
+  <p>
+    <label>
+      Fylke:
+      <br />
+      <select id="fylkeSelect" name="entry.1855713922" required>
+        <option></option>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label>
+      Kommune:
+      <br />
+      <select id="kommuneSelect" name="entry.916849448" required>
+        <option></option>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label>
+      Skole:
+      <br />
+      <select id="skoleSelect" name="entry.1872431456" required>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label>
+      Klassetrinn:
+      <br />
+      <input type="text" name="entry.983045582" required>
+    </label>
+  </p>
+  <br>
+  <button type="submit">Registrer deg</button>
+</form>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<script src="/data.js"></script>
+<script>
+  fylker.sort(([, navnA], [, navnB]) => navnA.localeCompare(navnB));
+  kommuner.sort(([, , navnA], [, , navnB]) => navnA.localeCompare(navnB));
+  skoler.sort(([navnA], [navnB]) => navnA.localeCompare(navnB));
+
+  function onSubmitted() {
+    window.location.pathname = "/drafts/confirm";
+  }
+
+  function createOption({ text, value }) {
+    const option = document.createElement("option");
+    option.innerText = text;
+    if (value) option.setAttribute("value", value);
+    return option;
+  }
+
+
+  const fylkeSelect = document.getElementById("fylkeSelect");
+  fylkeSelect.addEventListener("change", populateKommmuneSelect);
+  const kommuneSelect = document.getElementById("kommuneSelect");
+  kommuneSelect.addEventListener("change", populateSkoleSelect);
+  const skoleSelect = document.getElementById("skoleSelect");
+
+  for (const [fylkenr, fylke] of fylker) {
+    fylkeSelect.append(createOption({ text: fylke, value: fylkenr }));
+  }
+
+  function populateKommmuneSelect() {
+    kommuneSelect.innerHTML = "";
+    kommuneSelect.append(createOption({ text: "" }));
+    for (const [fylkenummer, kommunenummer, text] of kommuner) {
+      if (!fylkeSelect.value || fylkeSelect.value === fylkenummer) {
+        kommuneSelect.append(createOption({ text, value: kommunenummer }));
+      }
+    }
+  }
+
+  function populateSkoleSelect() {
+    skoleSelect.innerHTML = "";
+    skoleSelect.append(createOption({ text: "" }));
+    skoleSelect.setAttribute("disabled", kommuneSelect.value.length ? "false" : "true");
+    if (kommuneSelect.value) {
+      skoleSelect.removeAttribute("disabled");
+      for (const [text, antall_elever, antall_ansatte, laveste_trinn, hoyeste_trinn, eierforhold, kommunenummer] of skoler) {
+        if (kommunenummer === kommuneSelect.value) {
+          skoleSelect.append(createOption({ text }));
+        }
+      }
+    } else {
+      skoleSelect.setAttribute("disabled", "disabled");
+    }
+  }
+</script>

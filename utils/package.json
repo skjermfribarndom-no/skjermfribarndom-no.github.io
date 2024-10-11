@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "import:skoler": "tsx importSkoler.ts skoler.csv",
+    "import:kommuner": "tsx importKommuner.ts 1710.csv"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6"
+  }
+}
