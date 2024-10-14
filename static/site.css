@@ -6,7 +6,7 @@
 
 
 button {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .pv6 {
@@ -19,6 +19,10 @@ button {
 }
 
 form.pledge {
+
+    &:invalid button {
+       opacity: 50%;
+    }
 
     input, select {
         border-radius: 2px;
