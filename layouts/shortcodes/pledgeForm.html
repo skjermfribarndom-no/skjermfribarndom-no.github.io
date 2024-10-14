@@ -2,6 +2,7 @@
   action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPN-jm9LLRYuBe66fruALFa_F-UM9o8tt23LcbhP-mrFeNpw/formResponse"
   method="POST"
   onsubmit="onSubmitted()"
+  class="pledge"
 >
   <p>
     <label>
@@ -47,11 +48,25 @@
     <label>
       Klassetrinn:
       <br />
-      <input type="text" name="entry.983045582" required>
+      <input type="number" name="entry.983045582" min="1" max="13" required>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" name="entry.1955954328" required />
+      Jeg samtykker til at Skjermfri Norge kan kontakte meg
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" name="entry.1440581532" />
+      Jeg ønsker at Skjermfri Norge skal dele min emailadresse med andre foreldre ved min skole (valgfritt)
     </label>
   </p>
   <br>
-  <button type="submit">Registrer deg</button>
+  <p>
+    <button type="submit">Registrer meg</button>
+  </p>
 </form>
 <iframe name="hidden_iframe" style="display:none;"></iframe>
 <script src="/data.js"></script>
@@ -86,7 +101,7 @@
     kommuneSelect.innerHTML = "";
     kommuneSelect.append(createOption({ text: "" }));
     for (const [fylkenummer, kommunenummer, text] of kommuner) {
-      if (!fylkeSelect.value || fylkeSelect.value === fylkenummer) {
+      if (fylkeSelect.value === fylkenummer) {
         kommuneSelect.append(createOption({ text, value: kommunenummer }));
       }
     }
@@ -98,9 +113,9 @@
     skoleSelect.setAttribute("disabled", kommuneSelect.value.length ? "false" : "true");
     if (kommuneSelect.value) {
       skoleSelect.removeAttribute("disabled");
-      for (const [text, antall_elever, antall_ansatte, laveste_trinn, hoyeste_trinn, eierforhold, kommunenummer] of skoler) {
+      for (const [fylkesnummer, kommunenummer, text, value, lavestetrinn, hoeyestetrinn, eierform] of skoler) {
         if (kommunenummer === kommuneSelect.value) {
-          skoleSelect.append(createOption({ text }));
+          skoleSelect.append(createOption({ text, value }));
         }
       }
     } else {

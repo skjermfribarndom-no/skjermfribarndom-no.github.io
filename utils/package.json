@@ -1,16 +1,33 @@
 {
   "type": "module",
   "scripts": {
-    "import:skoler": "tsx importSkoler.ts skoler.csv",
-    "import:kommuner": "tsx importKommuner.ts 1710.csv"
+    "import": "npm run docker-compose && npm run import:data",
+    "docker-compose": "docker compose up --detach",
+    "extract:data": "tsx scripts/extract-data.ts > ../static/data.js",
+    "import:data": "npm run import:fylker && npm run import:kommuner && npm run import:skoler",
+    "import:fylker": "npm run import:fylker:download && npm run import:fylker:psql",
+    "import:fylker:download": "download --extract https://nedlasting.geonorge.no/geonorge/Basisdata/Fylker/POSTGIS/Basisdata_0000_Norge_25833_Fylker_POSTGIS.zip --out tmp/",
+    "import:fylker:psql": "docker exec -i postgis psql --user postgres < tmp/Basisdata_0000_Norge_25833_Fylker_PostGIS.sql",
+    "import:kommuner": "npm run import:kommuner:download && npm run import:kommuner:psql",
+    "import:kommuner:download": "download --extract https://nedlasting.geonorge.no/geonorge/Basisdata/Kommuner/POSTGIS/Basisdata_0000_Norge_25833_Kommuner_POSTGIS.zip --out tmp/",
+    "import:kommuner:psql": "docker exec -i postgis psql --user postgres < tmp/Basisdata_0000_Norge_25833_Kommuner_POSTGIS.sql",
+    "import:skoler": "npm run import:skoler:download && npm run import:skoler:psql",
+    "import:skoler:download": "download --extract https://nedlasting.geonorge.no/geonorge/Befolkning/Grunnskoler/PostGIS/Befolkning_0000_Norge_25833_Grunnskoler_PostGIS.zip --out tmp/",
+    "import:skoler:psql": "docker exec -i postgis psql --user postgres < tmp/Befolkning_0000_Norge_25833_Grunnskoler_PostGIS.sql"
   },
   "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
     "@types/node": "^22.7.5",
+    "@types/pg": "^8.11.10",
+    "download-cli": "^1.1.1",
     "prettier": "^3.3.3",
     "tsx": "^4.19.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "wget-improved": "^3.4.0"
   },
   "dependencies": {
-    "csv-parse": "^5.5.6"
+    "adm-zip": "^0.5.16",
+    "csv-parse": "^5.5.6",
+    "pg": "^8.13.0"
   }
 }

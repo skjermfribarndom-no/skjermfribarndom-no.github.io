@@ -1,3 +1,10 @@
+:root {
+    --clr-success: hsl(143, 100%, 26%);
+    --clr-warning: hsl(43, 100%, 66%);
+    --clr-error: hsl(348, 55%, 49%);
+}
+
+
 button {
     padding: 1em;
 }
@@ -9,4 +16,19 @@ button {
 
 .bg-black-60 {
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+form.pledge {
+
+    input, select {
+        border-radius: 2px;
+    }
+
+    input:user-invalid:not(:focus), select:user-invalid:not(:focus) {
+        outline: 3px solid var(--clr-error);
+    }
+
+    input:user-valid, select:user-valid {
+        outline: 1px solid var(--clr-success);
+    }
 }
