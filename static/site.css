@@ -13,6 +13,10 @@ button {
   padding-bottom: 2em;
 }
 
+.pb7 {
+  padding-bottom: unset;
+}
+
 .bg-black-60 {
   background-color: rgba(0, 0, 0, 0.4);
 }
