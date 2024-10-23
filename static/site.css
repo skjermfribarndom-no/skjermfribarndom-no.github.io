@@ -1,38 +1,43 @@
 :root {
-    --clr-success: hsl(143, 100%, 26%);
-    --clr-warning: hsl(43, 100%, 66%);
-    --clr-error: hsl(348, 55%, 49%);
+  --clr-success: hsl(143, 100%, 26%);
+  --clr-warning: hsl(43, 100%, 66%);
+  --clr-error: hsl(348, 55%, 49%);
 }
 
-
 button {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 .pv6 {
-    padding-top: 2em;
-    padding-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .bg-black-60 {
-    background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tc-l {
+  text-align: left !important;
 }
 
 form.pledge {
+  &:invalid button {
+    opacity: 50%;
+  }
 
-    &:invalid button {
-       opacity: 50%;
-    }
+  input,
+  select {
+    border-radius: 2px;
+  }
 
-    input, select {
-        border-radius: 2px;
-    }
+  input:user-invalid:not(:focus),
+  select:user-invalid:not(:focus) {
+    outline: 3px solid var(--clr-error);
+  }
 
-    input:user-invalid:not(:focus), select:user-invalid:not(:focus) {
-        outline: 3px solid var(--clr-error);
-    }
-
-    input:user-valid, select:user-valid {
-        outline: 1px solid var(--clr-success);
-    }
+  input:user-valid,
+  select:user-valid {
+    outline: 1px solid var(--clr-success);
+  }
 }
