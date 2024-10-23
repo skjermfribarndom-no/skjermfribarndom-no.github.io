@@ -22,6 +22,10 @@ button {
 }
 
 form.pledge {
+  fieldset {
+    border: unset;
+  }
+
   &:invalid button {
     opacity: 50%;
   }
@@ -33,11 +37,15 @@ form.pledge {
 
   input:user-invalid:not(:focus),
   select:user-invalid:not(:focus) {
-    outline: 3px solid var(--clr-error);
+    outline: var(--clr-error) solid 1px;
   }
 
-  input:user-valid,
-  select:user-valid {
-    outline: 1px solid var(--clr-success);
+  input:user-valid:not(:focus),
+  select:user-valid:not(:focus) {
+    outline: var(--clr-success) solid 1px;
+  }
+
+  textarea {
+    width: 100%;
   }
 }
