@@ -14,3 +14,7 @@ Denne siden vil etterhvert få veiledninger som kan bistå deg:
 - Forslag til interpellasjoner og politiske saker
 - Oversikt over alternativer til smarttelefoner
 - Veiledning for å engasjere lokalsamfunnet i kampen mot tidlig smarttelefonbruk
+
+## Ressurser
+
+* [Presentasjon for foreldremøter: Utsett smarttelefon](https://www.canva.com/design/DAGNESIAdR4/6PWQEp8hCbSwqWcO_AohyA/view) (delt av Hanne Svendsen)
