@@ -24,7 +24,3 @@ Vårt hovedmål er å endre samfunnsnormen om at barn i barneskolen må ha smart
 Barna våre skal selvsagt få muligheter til å bli kjent med teknologien, og ved å skjerme barna mot smarttelefoner og sosiale medier, gjør vi dem bedre rustet til å møte livet.
 
 På samme måte som vi i dag kritiserer tobakksindustrien, vil fremtiden dømme oss for ikke å ha tatt sterkere grep for å beskytte barna våre mot Big Tech.
-
-Skjermfri Barndom består av leder Marthe Arnesen, mamma til en 8 åring og med bakgrunn som lærer,  og nestleder Karina Ødegård, utdannet realist med mye skjermtid og sertifisert helsecoach. 
-
-
