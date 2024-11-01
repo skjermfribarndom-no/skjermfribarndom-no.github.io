@@ -22,7 +22,7 @@ Løftet er anonymt, og vi deler aldri ditt navn offentlig. Jo flere som signerer
 ## Tips for å signere løftet
 
 1. Det er viktig at du oppgir riktig fylke, kommune og skole for barnet ditt i løfteskjemaet. 
-2. Før du registrer deg - sjekk hvordan skolen  har registrert skolens navn på sin nettside.
+2. Før du signerer - sjekk hvordan skolen  har registrert skolens navn på sin nettside.
 3. Skolefiltreringen i skjemaet er basert på skolens kommune og fylke, så om du oppgir feil fylke eller kommune, vil ikke skolen dukke opp i søket.
 4. Siden løftene organiseres etter skoler, er det viktig å velge riktig skole i databasen når du fyller ut skjemaet.
 5. Om du ikke finner ditt barns skole: send oss en epost skjermfri@gmail.com, så får vi lagt til skolen så fort som mulig i skjemaet. Vær så spesifikk som mulig på fylke, kommune og skolenavn.
