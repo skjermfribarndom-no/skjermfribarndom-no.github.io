@@ -28,7 +28,7 @@ Løftet er anonymt, og vi deler aldri ditt navn offentlig. Jo flere som signerer
 5. Om du ikke finner ditt barns skole: send oss en epost skjermfri@gmail.com, så får vi lagt til skolen så fort som mulig i skjemaet. Vær så spesifikk som mulig på fylke, kommune og skolenavn.
 6. For å signere løftet må barnet ditt gå på skolen. Vennligst ikke signer løftet dersom barnet ditt fortsatt går i barnehage.
 7. Vi tar for øyeblikket bare imot løfter fra Norge.
-8. Husk at du kun trenger å signere løftet én gang. Det er ikke nødvendig å signere hvert skoleår. Systemet vårt vil automatisk oppdatere løftet med en klasse opp hvert år.
+8. Husk at du kun trenger å signere løftet én gang per barn. Det er ikke nødvendig å signere hvert skoleår. Systemet vårt vil automatisk oppdatere løftet med en klasse opp hvert år.
 9. Kun én forelder trenger å signere løftet. Om begge foreldre signerer, vil det skape duplikater.
 10. Når du har signert løftet, vil du bli varslet av Skjermfri Barndom når løftet går aktivt. Dette krever at minst 5 familier fra samme trinn og skole har signert. 
 
