@@ -22,7 +22,7 @@ Vi oppfordrer dere som vil vente lenger til å signere barneskoleløftet, og så
 
 ## Hvordan fungerer løftet?
 
-Ved å signere løftet, får du kontakt med andre foreldre på samme klassetrinn som deler samme mål. Når minst 8 familier fra en klasse har signert, blir de koblet sammen for videre samarbeid og diskusjon. Det er også mulig å bruke eksemplene som etterhvert finnes på « Ressurser» til å lage en skriftlig avtale uten å signere barneskoleløftet. Vi anbefaler imidlertid å signere, ettersom antall skoler og trinn som har tatt løftet vises på nettsiden, noe vi håper vil inspirere enda flere til å følge etter.
+Ved å signere løftet, får du kontakt med andre foreldre på samme klassetrinn som deler samme mål. Når minst 5 familier fra et trinn har signert, blir de koblet sammen for videre samarbeid og diskusjon. Det er også mulig å bruke eksemplene som etterhvert finnes på « Ressurser» til å lage en skriftlig avtale uten å signere barneskoleløftet. Vi anbefaler imidlertid å signere, ettersom antall skoler og trinn som har tatt løftet vises på nettsiden, noe vi håper vil inspirere enda flere til å følge etter.
 
 ## Hva kan vi bruke i stedet for smarttelefon?
 
