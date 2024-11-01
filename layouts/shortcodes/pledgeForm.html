@@ -82,10 +82,6 @@
 <iframe name="hidden_iframe" style="display: none"></iframe>
 <script src="/data.js"></script>
 <script>
-  fylker.sort(([, navnA], [, navnB]) => navnA.localeCompare(navnB));
-  kommuner.sort(([, , navnA], [, , navnB]) => navnA.localeCompare(navnB));
-  skoler.sort(([navnA], [navnB]) => navnA.localeCompare(navnB));
-
   function createOption({ text, value }) {
     const option = document.createElement("option");
     option.innerText = text;
