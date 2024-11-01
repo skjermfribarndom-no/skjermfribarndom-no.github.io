@@ -126,14 +126,15 @@
       for (const [
         fylkesnummer,
         kommunenummer,
-        text,
+        skolenavn,
         value,
         lavestetrinn,
         hoeyestetrinn,
         eierform,
+        besoksadresse
       ] of skoler) {
         if (kommunenummer === kommuneSelect.value) {
-          skoleSelect.append(createOption({ text, value }));
+          skoleSelect.append(createOption({ text: `${skolenavn}, ${besoksadresse}`, value }));
         }
       }
     } else {
