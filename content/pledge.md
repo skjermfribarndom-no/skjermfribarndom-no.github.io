@@ -4,12 +4,38 @@ type: page
 menu: main
 featured_image: '/images/Little-boy-hiking-in-the-forest-on-a-early-spring.-Kid-playing-and-having-fun-in-spring-or-autumn-day.-1553078080_2757x1917.jpeg'
 ---
-**Løftet lanseres 1. november!**
 
-Vi jobber med å lansere signering av løftet, og dersom du vil holde deg oppdatert, kan du sende oss en e-post for å motta mer informasjon. Vi sender kun noen få e-poster i året, og vi lover å ikke spamme deg. Din e-postadresse vil kun bli brukt til kommunikasjon fra Skjermfri Barndom, og vil ikke deles med tredjeparter. Du kan når som helst be om å bli fjernet fra vår e-postliste.
+## Vent til undomsskolen - signer løftet i dag!
 
-Vi oppfordrer deg også til å snakke med andre foreldre i klassen, slik at dere er klare til å signere sammen når løftet åpner. Når minst 8 personer fra samme klasse signerer samtidig, aktiveres løftet umiddelbart, og deres klasse eller skole får muligheten til å vises på vår oversikt over de som har sluttet seg til initiativet.
+Ved å signere dette løftet, lover du å vente med å gi barnet ditt en smarttelefon til minst ungdomsskolen. 
 
-Under fanen "Ressurser" finner du stadig flere verktøy som kan hjelpe deg i samtaler med andre foreldre.
+Dersom du ønsker at barnet ditt skal ha en enkel telefon som kun kan ringe og sende meldinger, kan du fortsatt signere løftet. En enkel telefon unngår mange av distraksjonene og farene ved en smarttelefon.
 
-Send oss en e-post på [skjermfri@gmail.com](mailto:skjermfri@gmail.com) for å motta mer informasjon. Merk emnefeltet med «Vent til ungdomsskolen».
+Når minst 5 familier på barnets trinn har underskrevet, vil du bli varslet via e-post om at løftet er aktivert. Dere får da mulighet til å synliggjøre skolenavn og trinn på vår oversikt over de som støtter initiativet.
+
+Vi sender deg og de andre foreldrene på trinnet en e-post for å hjelpe dere knytte kontakt. Du mottar da en liste over familier som også har valgt å vente sammen med e-postadresser, slik at dere kan støtte hverandre. 
+
+Ved å signere løftet blir du en del av et fellesskap av foreldre som ønsker å vente med smarttelefon til barna minst har nådd 8. klasse.
+
+Løftet er anonymt, og vi deler aldri ditt navn offentlig. Jo flere som signerer, desto sterkere står vi i arbeidet for å påvirke normene rundt barns bruk av smarttelefoner – både lokalt og nasjonalt.
+
+## Tips for å signere løftete
+
+1. På løfteskjemaet er det viktig at du oppgir både riktig fylke, kommune og skole for barnet ditt.
+2. Sjekk hvordan skolen din har registrert skolens navn på sin nettside før du signerer løftet.
+3. Skolefiltreringen i skjemaet er basert på skolens kommune og fylke, så om du oppgir feil fylke eller kommune, vil ikke skolen dukke opp i søket.
+4. Siden løftene organiseres etter skoler, er det viktig å velge riktig skole i databasen når du fyller ut skjemaet.
+5. Om du ikke finner ditt barns skole: send oss en epost skjermfri@gmail.com, så får vi lagt til skolen så fort som mulig i skjemaet. Vær så spesifikk som mulig på fylke, kommune og skolenavn.
+6. For å signere løftet må barnet ditt gå på skolen. Vennligst ikke signer løftet dersom barnet ditt fortsatt går i barnehage.
+7. Vi tar for øyeblikket bare imot løfter fra Norge.
+8. Husk at du kun trenger å signere løftet én gang. Det er ikke nødvendig å signere hvert skoleår. Systemet vårt vil automatisk oppdatere løftet med en klasse opp hvert år.
+9. Kun én forelder trenger å signere løftet. Om begge foreldre signerer, vil det skape duplikater.
+10. Når du har signert løftet, vil du bli varslet av Skjermfri Barndom når løftet går aktivt. Dette krever at minst 5 familier fra samme trinn og skole har signert. 
+
+## Tekst til personvernerklæring:
+
+Personvernerklæringen beskriver personvernpraksisene for Skjermfri Barndom. Vi prioriterer sikkerheten til din personlige informasjon og sikrer denne gjennom elektroniske sikkerhetstiltak som beskytter sensitiv informasjon. Når du fyller inn informasjon på løfteskjemaet, lagres den sikkert i vårt datastyringssystem. 
+
+Vi eier all informasjon som samles inn på dette nettstedet. Vi vil ikke selge eller leie ut informasjonen til noen. Vi deler heller ikke informasjonen din med noen tredjepart utenfor vår organisasjon. Informasjonen din vil ikke offentliggjøres på dette nettstedet. Dersom løftet ditt blir aktivt (5 eller flere løfter for ditt barns trinn), vil vi varsle deg. Du vil motta en e-post med en liste over familier som også venter på ditt barns trinn sammen med deres navn og e-post, slik at dere kan knytte kontakt med hverandre.
+
+{{< pledgeForm >}}
