@@ -14,11 +14,14 @@ async function extractData() {
   const skoler = extractResult(
     await client.query(`
               select fylkesnummer, kommunenummer, skolenavn, organisasjonsnummer, lavestetrinn, hoyestetrinn, eierforhold
-              from grunnskoler_f2c098368a42404cb380fef3f8c92545.grunnskole
+              from grunnskoler_e166db1856e143d6a7b820a7feea6715.grunnskole
               where idrift = 'Ja'
               order by skolenavn
     `),
-  );
+  ) as [string, string, string, string, number, number, string][];
+  skoler.push(["55", "5501", "Ekrehagen skole", "971578262", 1, 10, "Privat"]);
+  skoler.sort((a, b) => a[2].localeCompare(b[2]) || a[3].localeCompare(b[3]));
+
   const kommuner = extractResult(
     await client.query(`
               select substring(kommunenummer, 1, 2), kommunenummer, kommunenavn
