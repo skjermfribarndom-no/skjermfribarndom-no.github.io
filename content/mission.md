@@ -9,7 +9,7 @@ Skjermfri barndom er en grasrotbevegelse bestående av foreldre og ildsjeler som
 
 Vi ønsker å støtte foreldre i deres valg om å utsette smarttelefoner for barna, og samtidig arbeide for strengere reguleringer av teknologiselskaper, og høyere aldersgrenser på sosiale medier.
 
-Vårt hovedmål er å endre samfunnsnormen om at barn i barneskolen må ha smarttelefoner, heve aldersgrensene til SOME til 15 år, utfordre Big Techs voksende innflytelse over barndommen, og gi makta tilbake til foreldre ved å:
+Vårt hovedmål er å endre samfunnsnormen om at barn i barneskolen må ha smarttelefoner, heve aldersgrensene til SOME til 16 år, utfordre Big Techs voksende innflytelse over barndommen, og gi makta tilbake til foreldre ved å:
 
 🗣️ Skape en bred nasjonal samtale om farene ved smarttelefoner for barn.
 
