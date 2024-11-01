@@ -20,7 +20,9 @@ async function extractData() {
     `),
   ) as [string, string, string, string, number, number, string][];
   skoler.push(["55", "5501", "Ekrehagen skole", "971578262", 1, 10, "Privat"]);
-  skoler.sort((a, b) => a[2].localeCompare(b[2]) || a[3].localeCompare(b[3]));
+  skoler.sort(
+    (a, b) => a[2].localeCompare(b[2], "no") || a[3].localeCompare(b[3]),
+  );
 
   const kommuner = extractResult(
     await client.query(`
