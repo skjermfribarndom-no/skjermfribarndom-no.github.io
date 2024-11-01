@@ -39,14 +39,20 @@ async function extractData() {
               from kommuner_98f359e5da864eedbef9a3f0f8dd438f.kommune
               order by kommunenavn
     `),
+  ) as [string, string, string][];
+  kommuner.sort(
+    (a, b) => a[2].localeCompare(b[2], "no") || a[1].localeCompare(b[1]),
   );
+
   const fylker = extractResult(
     await client.query(`
               select distinct fylkesnummer, fylkesnavn
               from fylker_f5ebc56204d5463496260e99cba427e8.fylke
               order by fylkesnavn
     `),
-  );
+  ) as [string, string][];
+  fylker.sort((a, b) => a[1].localeCompare(b[1], "no"));
+
   console.log(
     "const fylker = [\n  " +
       fylker.map((f) => JSON.stringify(f)).join(",\n  ") +
