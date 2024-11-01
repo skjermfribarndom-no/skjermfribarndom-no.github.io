@@ -34,7 +34,7 @@ Løftet er anonymt, og vi deler aldri ditt navn offentlig. Jo flere som signerer
 
 ## Personvernerklæring:
 
-Personvernerklæringen beskriver personvernpraksisene for Skjermfri Barndom. Vi prioriterer sikkerheten til din personlige informasjon og sikrer denne gjennom elektroniske sikkerhetstiltak som beskytter sensitiv informasjon. Når du fyller inn informasjon på løfteskjemaet, lagres den sikkert i vårt datastyringssystem. 
+Skjermfri Barndom prioriterer sikkerheten til din personlige informasjon, og sikrer denne gjennom elektroniske sikkerhetstiltak som beskytter sensitiv informasjon. Når du fyller inn informasjon på løfteskjemaet, lagres den sikkert i vårt datastyringssystem. 
 
 Vi eier all informasjon som samles inn på dette nettstedet. Vi vil ikke selge eller leie ut informasjonen til noen. Vi deler heller ikke informasjonen din med noen tredjepart utenfor vår organisasjon. Informasjonen din vil ikke offentliggjøres på dette nettstedet. Dersom løftet ditt blir aktivt (5 eller flere løfter for ditt barns trinn), vil vi varsle deg. Du vil motta en e-post med en liste over familier som også venter på ditt barns trinn sammen med deres navn og e-post, slik at dere kan knytte kontakt med hverandre.
 
