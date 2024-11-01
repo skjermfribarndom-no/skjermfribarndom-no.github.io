@@ -32,7 +32,7 @@ Løftet er anonymt, og vi deler aldri ditt navn offentlig. Jo flere som signerer
 9. Kun én forelder trenger å signere løftet. Om begge foreldre signerer, vil det skape duplikater.
 10. Når du har signert løftet, vil du bli varslet av Skjermfri Barndom når løftet går aktivt. Dette krever at minst 5 familier fra samme trinn og skole har signert. 
 
-## Tekst til personvernerklæring:
+## Personvernerklæring:
 
 Personvernerklæringen beskriver personvernpraksisene for Skjermfri Barndom. Vi prioriterer sikkerheten til din personlige informasjon og sikrer denne gjennom elektroniske sikkerhetstiltak som beskytter sensitiv informasjon. Når du fyller inn informasjon på løfteskjemaet, lagres den sikkert i vårt datastyringssystem. 
 
