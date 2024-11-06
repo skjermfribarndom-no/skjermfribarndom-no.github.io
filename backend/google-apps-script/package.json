@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  },
+  "scripts": {
+    "deploy": "clasp deploy",
+    "status": "clasp deployments"
+  }
+}
