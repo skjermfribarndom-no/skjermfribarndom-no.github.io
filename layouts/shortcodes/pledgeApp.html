@@ -12,21 +12,23 @@
       <label>
         Navn på foresatte:
         <br />
-        <input type="text" name="name" required value="Developer Testing" autofocus />
+        <input type="text" name="name" required autofocus />
       </label>
     </p>
     <p>
       <label>
         Epost foresatte:
         <br />
-        <input type="email" name="email" required value="jhannes@gmail.com" />
+        <input type="email" name="email" required />
       </label>
     </p>
     <p>
       <label>
         Fylke:
         <br />
-        <select id="fylkeSelect" name="fylkesnummer" required></select>
+        <select id="fylkeSelect" name="fylkesnummer" required>
+          <option></option>
+        </select>
         <input type="hidden" name="fylkesnavn" id="fylkesnavn" required />
       </label>
     </p>
@@ -34,7 +36,9 @@
       <label>
         Kommune:
         <br />
-        <select id="kommuneSelect" name="kommunenummer" required></select>
+        <select id="kommuneSelect" name="kommunenummer" required>
+          <option></option>
+        </select>
         <input type="hidden" name="kommunenavn" id="kommunenavn" required />
       </label>
     </p>
@@ -42,7 +46,9 @@
       <label>
         Skole:
         <br />
-        <select id="skoleSelect" name="skoleorgnummer" required></select>
+        <select id="skoleSelect" name="skoleorgnummer" required>
+          <option></option>
+        </select>
         <input type="hidden" name="skolenavn" id="skolenavn" required />
       </label>
     </p>
@@ -113,8 +119,6 @@
     return option;
   }
 
-  //document.querySelector("[name='returnUrl']").value = window.location.href;
-
   const fylkeSelect = document.getElementById("fylkeSelect");
   const fylkenavnInput = document.getElementById("fylkesnavn");
   fylkeSelect.addEventListener("change", populateKommmuneSelect);
@@ -144,7 +148,6 @@
         skoleSelect.options[skoleSelect.selectedIndex].text),
   );
 
-  fylkeSelect.append(createOption({ text: "" }));
   for (const [fylkenr, fylke] of fylker) {
     fylkeSelect.append(createOption({ text: fylke, value: fylkenr }));
   }
@@ -162,7 +165,7 @@
 
   function populateSkoleSelect() {
     skoleSelect.innerHTML = "";
-    //skoleSelect.append(createOption({ text: "" }));
+    skoleSelect.append(createOption({ text: "" }));
     skoleSelect.setAttribute(
       "disabled",
       kommuneSelect.value.length ? "false" : "true",
