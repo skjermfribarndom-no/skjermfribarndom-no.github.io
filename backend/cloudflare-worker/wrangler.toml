@@ -1,0 +1,6 @@
+compatibility_date = "2024-11-06"
+
+# wrangler.toml (wrangler v3.79.0^)
+[observability]
+enabled = true
+head_sampling_rate = 1

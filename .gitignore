@@ -3,4 +3,7 @@
 public/
 resources/
 .hugo_build.lock
-/utils/node_modules/
+node_modules/
+
+/backend/cloudflare-worker/.wrangler/tmp
+.clasp.json

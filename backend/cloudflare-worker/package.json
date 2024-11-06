@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "hono": "^4.6.9"
+  },
+  "devDependencies": {
+    "wrangler": "^3.84.1"
+  },
+  "scripts": {
+    "dev": "wrangler dev worker.ts",
+    "deploy": "wrangler deploy worker.ts --name skjermfribarndom"
+  }
+}
