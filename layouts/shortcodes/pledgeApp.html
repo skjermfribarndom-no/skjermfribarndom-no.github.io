@@ -1,0 +1,190 @@
+<form
+  action="https://skjermfribarndom.skjermfribarndom.workers.dev/submit"
+  onsubmit="onSubmit(); return false;"
+  class="pledge"
+  id="pledgeForm"
+>
+  <fieldset>
+    <div class="progressIndicator">
+      <div class="spinner"></div>
+    </div>
+    <p>
+      <label>
+        Navn på foresatte:
+        <br />
+        <input type="text" name="name" required value="Developer Testing" autofocus />
+      </label>
+    </p>
+    <p>
+      <label>
+        Epost foresatte:
+        <br />
+        <input type="email" name="email" required value="jhannes@gmail.com" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Fylke:
+        <br />
+        <select id="fylkeSelect" name="fylkesnummer" required></select>
+        <input type="hidden" name="fylkesnavn" id="fylkesnavn" required />
+      </label>
+    </p>
+    <p>
+      <label>
+        Kommune:
+        <br />
+        <select id="kommuneSelect" name="kommunenummer" required></select>
+        <input type="hidden" name="kommunenavn" id="kommunenavn" required />
+      </label>
+    </p>
+    <p>
+      <label>
+        Skole:
+        <br />
+        <select id="skoleSelect" name="skoleorgnummer" required></select>
+        <input type="hidden" name="skolenavn" id="skolenavn" required />
+      </label>
+    </p>
+    <p>
+      <label>
+        Klassetrinn:
+        <br />
+        <input type="number" name="klassetrinn" min="1" max="13" required value="1" />
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="samtykke_email" checked required />
+        Jeg samtykker til at Skjermfri Norge kan kontakte meg
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="samtykke_dele_email" />
+        Jeg ønsker at Skjermfri Norge skal dele min emailadresse med andre
+        foreldre ved min skole (valgfritt)
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="samtykke_nyhetsbrev" />
+        Jeg ønsker å motta nyhetsbrev fra Skjermfri Norge (valgfritt)
+      </label>
+    </p>
+    <p>
+      <label for="kommentarerTextArea">Kommentarer: (valgfritt)</label>
+      <br />
+      <textarea name="kommentarer" id="kommentarerTextArea"></textarea>
+    </p>
+    <p>
+      <button type="submit">Registrer meg</button>
+    </p>
+  </fieldset>
+</form>
+<iframe name="hidden_iframe" style="display: none"></iframe>
+<script src="/data.js"></script>
+<script>
+  async function onSubmit() {
+    const form = document.getElementById("pledgeForm");
+    const fieldset = form.querySelector("fieldset");
+    const formData = new FormData(form);
+    try {
+      fieldset.disabled = true;
+      const res = await fetch(form.getAttribute("action"), {
+        method: "POST",
+        body: formData,
+      });
+      if (res.ok) {
+        sessionStorage.setItem("pledgeResponse", JSON.stringify(await res.json()));
+        window.location.pathname = "/drafts/confirmation"
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      fieldset.disabled = false;
+    }
+  }
+
+  function createOption({ text, value }) {
+    const option = document.createElement("option");
+    option.innerText = text;
+    if (value) option.setAttribute("value", value);
+    return option;
+  }
+
+  //document.querySelector("[name='returnUrl']").value = window.location.href;
+
+  const fylkeSelect = document.getElementById("fylkeSelect");
+  const fylkenavnInput = document.getElementById("fylkesnavn");
+  fylkeSelect.addEventListener("change", populateKommmuneSelect);
+  fylkeSelect.addEventListener(
+    "change",
+    () =>
+      (fylkenavnInput.value =
+        fylkeSelect.options[fylkeSelect.selectedIndex].text),
+  );
+
+  const kommuneSelect = document.getElementById("kommuneSelect");
+  const kommunenavnInput = document.getElementById("kommunenavn");
+  kommuneSelect.addEventListener("change", populateSkoleSelect);
+  kommuneSelect.addEventListener(
+    "change",
+    () =>
+      (kommunenavnInput.value =
+        kommuneSelect.options[kommuneSelect.selectedIndex].text),
+  );
+
+  const skoleSelect = document.getElementById("skoleSelect");
+  const skolenavnInput = document.getElementById("skolenavn");
+  skoleSelect.addEventListener(
+    "change",
+    () =>
+      (skolenavnInput.value =
+        skoleSelect.options[skoleSelect.selectedIndex].text),
+  );
+
+  fylkeSelect.append(createOption({ text: "" }));
+  for (const [fylkenr, fylke] of fylker) {
+    fylkeSelect.append(createOption({ text: fylke, value: fylkenr }));
+  }
+
+  function populateKommmuneSelect() {
+    skoleSelect.innerHTML = "";
+    kommuneSelect.innerHTML = "";
+    kommuneSelect.append(createOption({ text: "" }));
+    for (const [fylkenummer, kommunenummer, text] of kommuner) {
+      if (fylkeSelect.value === fylkenummer) {
+        kommuneSelect.append(createOption({ text, value: kommunenummer }));
+      }
+    }
+  }
+
+  function populateSkoleSelect() {
+    skoleSelect.innerHTML = "";
+    //skoleSelect.append(createOption({ text: "" }));
+    skoleSelect.setAttribute(
+      "disabled",
+      kommuneSelect.value.length ? "false" : "true",
+    );
+    if (kommuneSelect.value) {
+      skoleSelect.removeAttribute("disabled");
+      for (const [
+        fylkesnummer,
+        kommunenummer,
+        skolenavn,
+        value,
+        lavestetrinn,
+        hoeyestetrinn,
+        eierform,
+        besoksadresse
+      ] of skoler) {
+        if (kommunenummer === kommuneSelect.value) {
+          skoleSelect.append(createOption({ text: `${skolenavn}, ${besoksadresse}`, value }));
+        }
+      }
+    } else {
+      skoleSelect.setAttribute("disabled", "disabled");
+    }
+  }
+</script>

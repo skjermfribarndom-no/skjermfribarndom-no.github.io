@@ -28,6 +28,31 @@ button {
 form.pledge {
   fieldset {
     border: unset;
+    position: relative;
+
+    .progressIndicator {
+      z-index: 1;
+      display: none;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .spinner {
+        aspect-ratio: 1;
+        width: 300px;
+        border-radius: 50%;
+        border: 40px solid hsla(0, 0%, 83%, 50%);
+        border-top-color: hsla(0, 0%, 41%, 75%);
+        animation: rotate 1.5s linear infinite;
+      }
+    }
+
+    &:disabled {
+      .progressIndicator {
+        display: revert;
+      }
+    }
   }
 
   &:invalid button {
@@ -51,5 +76,11 @@ form.pledge {
 
   textarea {
     width: 100%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }

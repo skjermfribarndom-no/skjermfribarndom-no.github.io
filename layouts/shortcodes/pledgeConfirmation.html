@@ -1,0 +1,7 @@
+<pre class="pledgeConfirmation">
+</pre>
+<script>
+  const pledgeResponse = JSON.parse(sessionStorage.getItem("pledgeResponse"))
+  document.querySelector(".pledgeConfirmation").innerHTML = JSON.stringify(pledgeResponse, null, 2);
+  sessionStorage.removeItem("pledgeResponse");
+</script>
