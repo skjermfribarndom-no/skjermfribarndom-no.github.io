@@ -7,3 +7,5 @@ node_modules/
 
 /backend/cloudflare-worker/.wrangler/tmp
 .clasp.json
+.env
+/backend/cloudflare-worker/.dev.vars

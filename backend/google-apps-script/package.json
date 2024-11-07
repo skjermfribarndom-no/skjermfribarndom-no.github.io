@@ -3,7 +3,9 @@
     "@google/clasp": "^2.4.2"
   },
   "scripts": {
-    "deploy": "clasp deploy",
-    "status": "clasp deployments"
+    "deploy": "clasp push && clasp deploy",
+    "dev:deploy": "clasp push && clasp deploy --deploymentId AKfycbz-Mn2AH09rfSnV52fe4ZjB59Q8ZekM1FkaCHnr3yBDkW9L5F42mFKql1owR_DIpbdylg",
+    "status": "clasp deployments | node ../scripts/latest-deployment.js > ../cloudflare-worker/.dev.vars",
+    "create": "clasp create --type sheets 'Development - Skjermfri barndom'"
   }
 }

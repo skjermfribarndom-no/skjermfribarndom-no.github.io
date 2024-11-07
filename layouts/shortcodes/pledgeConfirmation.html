@@ -1,7 +1,12 @@
-<pre class="pledgeConfirmation">
-</pre>
+<p class="pledgeConfirmation"></p>
 <script>
-  const pledgeResponse = JSON.parse(sessionStorage.getItem("pledgeResponse"))
-  document.querySelector(".pledgeConfirmation").innerHTML = JSON.stringify(pledgeResponse, null, 2);
-  sessionStorage.removeItem("pledgeResponse");
+  const response = sessionStorage.getItem("pledgeResponse");
+  if (response) {
+    const pledgeResponse = JSON.parse(response);
+    console.log({ pledgeResponse });
+    const { name, klassetrinn, skolenavn } = pledgeResponse.data;
+    document.querySelector(".pledgeConfirmation").innerHTML =
+      `Vi har mottatt følgende informasjon. Foresatte: ${name}, barn ved ${klassetrinn}. klasse ved ${skolenavn}`;
+    sessionStorage.removeItem("pledgeResponse");
+  }
 </script>

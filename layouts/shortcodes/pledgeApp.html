@@ -1,13 +1,18 @@
 <form
-  action="https://skjermfribarndom.skjermfribarndom.workers.dev/submit"
+  action='{{getenv "HUGO_CLOUDFLARE_URL" | default "https://skjermfribarndom.skjermfribarndom.workers.dev"}}/submit'
   onsubmit="onSubmit(); return false;"
   class="pledge"
   id="pledgeForm"
 >
   <fieldset>
+    <div class="errorMessage" style="display: none">
+      <h3>Det skjedde en feil</h3>
+      <p class="message"></p>
+    </div>
     <div class="progressIndicator">
       <div class="spinner"></div>
     </div>
+    <input type="hidden" name="confirmationUrl" id="confirmationUrl" />
     <p>
       <label>
         Navn på foresatte:
@@ -56,7 +61,14 @@
       <label>
         Klassetrinn:
         <br />
-        <input type="number" name="klassetrinn" min="1" max="13" required value="1" />
+        <input
+          type="number"
+          name="klassetrinn"
+          min="1"
+          max="13"
+          required
+          value="1"
+        />
       </label>
     </p>
     <p>
@@ -88,7 +100,6 @@
     </p>
   </fieldset>
 </form>
-<iframe name="hidden_iframe" style="display: none"></iframe>
 <script src="/data.js"></script>
 <script>
   async function onSubmit() {
@@ -102,8 +113,21 @@
         body: formData,
       });
       if (res.ok) {
-        sessionStorage.setItem("pledgeResponse", JSON.stringify(await res.json()));
-        window.location.pathname = "/drafts/confirmation"
+        const pledgeResponse = await res.json();
+        if (pledgeResponse.status === "ok") {
+          sessionStorage.setItem(
+            "pledgeResponse",
+            JSON.stringify(pledgeResponse),
+          );
+          window.location.pathname = "/drafts/confirmation";
+        } else {
+          console.log({ pledgeResponse });
+          const errorElement = document.querySelector(".errorMessage");
+          errorElement.style.display = "revert";
+          errorElement.querySelector(".message").innerHTML =
+            pledgeResponse.errorMessage;
+          errorElement.scrollIntoView();
+        }
       }
     } catch (error) {
       console.error(error);
@@ -118,6 +142,9 @@
     if (value) option.setAttribute("value", value);
     return option;
   }
+
+  const confirmationUrl = document.getElementById("confirmationUrl");
+  confirmationUrl.value = new URL("../confirm/", window.location.href);
 
   const fylkeSelect = document.getElementById("fylkeSelect");
   const fylkenavnInput = document.getElementById("fylkesnavn");
@@ -180,10 +207,12 @@
         lavestetrinn,
         hoeyestetrinn,
         eierform,
-        besoksadresse
+        besoksadresse,
       ] of skoler) {
         if (kommunenummer === kommuneSelect.value) {
-          skoleSelect.append(createOption({ text: `${skolenavn}, ${besoksadresse}`, value }));
+          skoleSelect.append(
+            createOption({ text: `${skolenavn}, ${besoksadresse}`, value }),
+          );
         }
       }
     } else {

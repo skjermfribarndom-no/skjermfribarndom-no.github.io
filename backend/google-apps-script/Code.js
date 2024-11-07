@@ -1,58 +1,87 @@
-function sendConfirmationEmail(name, email, confirmation_token) {
-  const confirmationLink = `${ScriptApp.getService().getUrl()}?token=${confirmation_token}&email=${encodeURIComponent(email)}`;
-
-  const subject = "Please Confirm Your Submission";
+function sendConfirmationEmail(name, email, confirmationLink) {
+  const subject = "Bekreft din emailadresse for skjermfribarndom.no";
   const htmlBody = `
-          <p>Hello ${name},</p>
-          <p>Thank you for your submission. Please confirm your submission by clicking the link below:</p>
-          <p><a href="${confirmationLink}">Click here to confirm your submission</a></p>
-          <p>Or copy and paste the following link into your browser:</p>
+          <p>Hei ${name},</p>
+          <p>Takk for at du har signert løftet om skjermfri barndom. For å bekrefte din signatur ber vi om at du klikker på denne lenken:</p>
+          <p><a href="${confirmationLink}">Bekreft signering</a></p>
+          <p>Eller kopier og lim følgende lenke inn i nettleseren:</p>
           <p>${confirmationLink}</p>
-          <p>Best regards,<br>Your Team</p>
+          <p>Takk for at du er med,<br>Hilsen Skjermfri Norge</p>
   `;
   MailApp.sendEmail({ to: email, subject, htmlBody });
 }
 
 function doPost(e) {
-  Logger.log("Posting");
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+  try {
+    Logger.log("Posting");
+    const sheet =
+      SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
 
-  const { name, email, returnUrl } = e.parameter;
+    const { name, email, confirmationUrl } = e.parameter;
 
-  if (name === "crash") {
+    if (name === "error") {
+      return ContentService.createTextOutput(
+        JSON.stringify({ status: "error", errorMessage: "Induced error" }),
+      );
+    }
+    if (name === "crash") {
+      throw Error("crashing");
+    }
+
+    const confirmation_token = Math.random().toString(36).substring(2);
+
+    sheet.appendRow([
+      "Recorded",
+      new Date(),
+      undefined,
+      name,
+      email,
+      e.parameter.fylkesnummer,
+      e.parameter.fylkesnavn,
+      e.parameter.kommunenummer,
+      e.parameter.kommunenavn,
+      e.parameter.skoleorgnummer,
+      e.parameter.skolenavn,
+      e.parameter.klassetrinn,
+      e.parameter.samtykke_email,
+      e.parameter.samtykke_dele_email,
+      e.parameter.kommentarer,
+      confirmation_token,
+    ]);
+    const confirmationLink = `${confirmationUrl}?token=${confirmation_token}&email=${encodeURIComponent(email)}`;
+    sendConfirmationEmail(name, email, confirmationLink);
+    sheet.getRange(sheet.getLastRow(), 1).setValue("Email sent"); // Assuming column 5 stores email status
+
     return ContentService.createTextOutput(
-      JSON.stringify({ result: "error", error: "Induced error" }),
-    );
+      JSON.stringify({ status: "ok", data: e.parameter }),
+    ).setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService.createTextOutput(
+      JSON.stringify({
+        status: "error",
+        data: e.parameter,
+        errorMessage: error.toString(),
+      }),
+    ).setMimeType(ContentService.MimeType.JSON);
   }
+}
 
-  const confirmation_token = Math.random().toString(36).substring(2);
+function confirmSubmission({ email, token }) {
+  Logger.log(`Confirming email=${email}, token=${token}`);
 
-  sheet.appendRow([
-    new Date(),
-    name,
-    email,
-    e.parameter.fylkesnummer,
-    e.parameter.fylkesnavn,
-    e.parameter.kommunenummer,
-    e.parameter.kommunenavn,
-    e.parameter.skoleorgnummer,
-    e.parameter.skolenavn,
-    e.parameter.klassetrinn,
-    e.parameter.samtykke_email,
-    e.parameter.samtykke_dele_email,
-    e.parameter.kommentarer,
-    confirmation_token,
-  ]);
-  sendConfirmationEmail(name, email, confirmation_token);
-  sheet.getRange(sheet.getLastRow(), 14).setValue("Email sent"); // Assuming column 5 stores email status
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+  const data = sheet.getDataRange().getValues();
 
-  const result = "success";
-  return ContentService.createTextOutput(
-    JSON.stringify({
-      result,
-      data: e.parameter,
-    }),
-  ).setMimeType(ContentService.MimeType.JSON);
+  // Loop through the data to find the corresponding token and email
+  for (let i = 1; i < data.length; i++) {
+    Logger.log(`Row ${i}, token=${data[i][15]}, email=${data[i][4]}`);
+    if (data[i][15] === token && data[i][4] === email) {
+      sheet.getRange(i + 1, 1).setValue("Confirmed");
+      sheet.getRange(i + 1, 3).setValue(new Date());
+      return true;
+    }
+  }
+  return false;
 }
 
 function doGet(e) {
@@ -64,6 +93,9 @@ function doGet(e) {
   if (action === "error") {
     throw Error("Simulated error");
   }
+  if (action !== "confirm") {
+    return ContentService.createTextOutput(`Invalid action ${action}`);
+  }
 
   if (!token || !email) {
     return ContentService.createTextOutput(
@@ -71,23 +103,14 @@ function doGet(e) {
     );
   }
 
-  Logger.log(`Confirming email=${email}, token=${token}`);
-
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
-  const data = sheet.getDataRange().getValues();
-
-  // Loop through the data to find the corresponding token and email
-  for (let i = 1; i < data.length; i++) {
-    Logger.log(`Row ${i}, token=${data[i][12]}, email=${data[i][2]}`);
-    if (data[i][12] === token && data[i][2] === email) {
-      sheet.getRange(i + 1, 13).setValue("Confirmed");
-      return ContentService.createTextOutput(
-        "Your email has been successfully confirmed. Thank you!",
-      );
-    }
+  if (confirmSubmission({ email, token })) {
+    return ContentService.createTextOutput(JSON.stringify({ status: "ok" }));
+  } else {
+    return ContentService.createTextOutput(
+      JSON.stringify({
+        status: "error",
+        errorMessage: "Token or email not found",
+      }),
+    );
   }
-
-  return ContentService.createTextOutput(
-    "Confirmation failed: token or email not found.",
-  );
 }

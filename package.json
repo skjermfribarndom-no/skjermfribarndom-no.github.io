@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "dev": "npm run dev:deploy && concurrently npm:dev:hugo npm:dev:cloudflare",
+    "dev:deploy": "cd backend/google-apps-script && npm run dev:deploy",
+    "dev:hugo": "cross-env HUGO_CLOUDFLARE_URL=http://localhost:8787 hugo serve",
+    "dev:cloudflare": "cd backend/cloudflare-worker && npm run dev"
+  }
+}

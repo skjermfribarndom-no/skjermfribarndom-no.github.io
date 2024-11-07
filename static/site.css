@@ -25,38 +25,53 @@ button {
   text-align: left !important;
 }
 
-form.pledge {
-  fieldset {
-    border: unset;
-    position: relative;
+fieldset {
+  border: unset;
+  position: relative;
 
-    .progressIndicator {
-      z-index: 1;
-      display: none;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  .progressIndicator {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-      .spinner {
-        aspect-ratio: 1;
-        width: 300px;
-        border-radius: 50%;
-        border: 40px solid hsla(0, 0%, 83%, 50%);
-        border-top-color: hsla(0, 0%, 41%, 75%);
-        animation: rotate 1.5s linear infinite;
-      }
-    }
-
-    &:disabled {
-      .progressIndicator {
-        display: revert;
-      }
+    .spinner {
+      aspect-ratio: 1;
+      width: 100px;
+      border-width: 20px;
+      border-radius: 50%;
+      border-style: solid;
+      border-color: hsla(0, 0%, 83%, 50%);
+      border-top-color: hsla(0, 0%, 41%, 75%);
+      animation: rotate 1.5s linear infinite;
     }
   }
 
+  &:disabled {
+    .progressIndicator {
+      display: revert;
+    }
+  }
+}
+
+.errorMessage {
+  border: 2px solid var(--clr-error);
+  padding: 0.5em;
+}
+
+form.pledge {
+
   &:invalid button {
     opacity: 50%;
+  }
+
+  .progressIndicator {
+    .spinner {
+      width: 300px;
+      border-width: 40px;
+    }
   }
 
   input,

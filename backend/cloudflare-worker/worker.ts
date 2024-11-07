@@ -1,14 +1,21 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
+import { env } from "hono/adapter";
 const app = new Hono();
 app.use("/*", cors());
 
-const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwkqoTFYHUt2dkRzgNstENTNhR2K32OU6fSFueU9bi8OR-89QRJr15GCrAvChNOk5i9iw/exec";
+const DEFAULT_APP_SCRIPT_DEPLOYMENT =
+  "AKfycbwkqoTFYHUt2dkRzgNstENTNhR2K32OU6fSFueU9bi8OR-89QRJr15GCrAvChNOk5i9iw";
+
+function getAppScriptUrl(variables: any) {
+  const deploymentId =
+    variables["APP_SCRIPT_DEPLOYMENT_ID"] || DEFAULT_APP_SCRIPT_DEPLOYMENT;
+  return `https://script.google.com/macros/s/${deploymentId}/exec`;
+}
 
 app.post("/submit", async (c) => {
   console.log("Submit form");
-  const response = await fetch(APPS_SCRIPT_URL, {
+  const response = await fetch(getAppScriptUrl(env(c)), {
     method: c.req.method,
     body: await c.req.text(),
     headers: c.req.raw.headers,
@@ -19,9 +26,22 @@ app.post("/submit", async (c) => {
   });
 });
 
+app.get("/confirm", async (c) => {
+  console.log("Confirm submission with query " + c.req.query());
+  const response = await fetch(
+    getAppScriptUrl(env(c)) +
+      "?action=confirm&" +
+      new URLSearchParams(c.req.query()),
+  );
+  return c.newResponse(response.body, {
+    status: response.status,
+    headers: response.headers,
+  });
+});
+
 app.get("/health", async (c) => {
   console.log("Health check");
-  const response = await fetch(APPS_SCRIPT_URL + "?action=test");
+  const response = await fetch(getAppScriptUrl(env(c)) + "?action=test");
   if (!response.ok) {
     return c.json(
       { status: "FAILED", step: "apps", message: await response.text() },
@@ -32,6 +52,7 @@ app.get("/health", async (c) => {
   return c.json({
     status: "OK",
     message: "Worker ok (typescript)",
+    url: getAppScriptUrl(env(c)),
     script: {
       status: response.status,
       message: await response.text(),

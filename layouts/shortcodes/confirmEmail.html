@@ -1,0 +1,33 @@
+<fieldset id="confirm" style="border: unset">
+  <div class="progressIndicator">
+    <div class="spinner"></div>
+  </div>
+  <div style="display: none" id="confirmationMessage">{{ .Inner }}</div>
+</fieldset>
+<script>
+  const url =
+    '{{getenv "HUGO_CLOUDFLARE_URL" | default "https://skjermfribarndom.skjermfribarndom.workers.dev"}}/confirm';
+  async function confirm() {
+    const fieldSet = document.getElementById("confirm");
+    fieldSet.disabled = true;
+    try {
+      const res = await fetch(url + window.location.search);
+      if (!res.ok) {
+        alert("Feil under bekreftelse: " + res.statusText);
+      } else {
+        const result = await res.json();
+        if (result.status === "ok") {
+          document.getElementById("confirmationMessage").style.display = "unset";
+        } else if (result.status === "error") {
+          alert("Feil under bekreftelse: " + result.errorMessage);
+        } else {
+          alert("Ukjent feil under bekreftelse: " + JSON.stringify(result));
+        }
+      }
+    } finally {
+      fieldSet.disabled = false;
+    }
+  }
+
+  confirm();
+</script>
