@@ -23,7 +23,7 @@ async function extractData() {
     "55",
     "5501",
     "Ekrehagen skole",
-    "971578262",
+    "973255428",
     1,
     10,
     "Privat",
