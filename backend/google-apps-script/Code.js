@@ -45,6 +45,7 @@ function doPost(e) {
       e.parameter.klassetrinn,
       e.parameter.samtykke_email,
       e.parameter.samtykke_dele_email,
+      e.parameter.samtykke_nyhetsbrev,
       e.parameter.kommentarer,
       confirmation_token,
     ]);
@@ -74,8 +75,8 @@ function confirmSubmission({ email, token }) {
 
   // Loop through the data to find the corresponding token and email
   for (let i = 1; i < data.length; i++) {
-    Logger.log(`Row ${i}, token=${data[i][15]}, email=${data[i][4]}`);
-    if (data[i][15] === token && data[i][4] === email) {
+    Logger.log(`Row ${i}, token=${data[i][16]}, email=${data[i][4]}`);
+    if (data[i][16] === token && data[i][4] === email) {
       sheet.getRange(i + 1, 1).setValue("Confirmed");
       sheet.getRange(i + 1, 3).setValue(new Date());
       return true;

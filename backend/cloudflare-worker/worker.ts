@@ -5,7 +5,7 @@ const app = new Hono();
 app.use("/*", cors());
 
 const DEFAULT_APP_SCRIPT_DEPLOYMENT =
-  "AKfycbzwhEZUdydehACZTon_LXzbIZJ-eBoBEh5Mc13DabFGXoYg0WmrkdVDWwhpilIEIi7FTg";
+  "AKfycbwP3AyILRHAoyfhFOLXglJkVrScX1dHNB6HYJiBo7lQMzkRoRSBPHCzhL3RwTPI6futPQ";
 
 function getAppScriptUrl(variables: any) {
   const deploymentId =
