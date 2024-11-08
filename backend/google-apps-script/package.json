@@ -1,10 +1,11 @@
 {
   "devDependencies": {
-    "@google/clasp": "^2.4.2"
+    "@google/clasp": "^2.4.2",
+    "env-cmd": "^10.1.0"
   },
   "scripts": {
     "deploy": "clasp push && clasp deploy",
-    "dev:deploy": "clasp push && clasp deploy --deploymentId AKfycbz-Mn2AH09rfSnV52fe4ZjB59Q8ZekM1FkaCHnr3yBDkW9L5F42mFKql1owR_DIpbdylg",
+    "dev:deploy": "clasp push && env-cmd -f ../cloudflare-worker/.dev.vars -x --silent \"clasp deploy --deploymentId $APP_SCRIPT_DEPLOYMENT_ID\"",
     "status": "clasp deployments | node ../scripts/latest-deployment.js > ../cloudflare-worker/.dev.vars",
     "create": "clasp create --type sheets 'Development - Skjermfri barndom'"
   }
