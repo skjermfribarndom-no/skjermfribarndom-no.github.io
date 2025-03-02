@@ -2,11 +2,11 @@ function sendConfirmationEmail(name, email, confirmationLink) {
   const subject = "Bekreft din emailadresse for skjermfribarndom.no";
   const htmlBody = `
           <p>Hei ${name},</p>
-          <p>Takk for at du har signert løftet om skjermfri barndom. For å bekrefte din signatur ber vi om at du klikker på denne lenken:</p>
+          <p>Takk for at du har signert løftet om å vente med smarttelefon til ungdomsskolen. For å bekrefte din signatur ber vi om at du klikker på denne lenken:</p>
           <p><a href="${confirmationLink}">Bekreft signering</a></p>
           <p>Eller kopier og lim følgende lenke inn i nettleseren:</p>
           <p>${confirmationLink}</p>
-          <p>Takk for at du er med,<br>Hilsen Skjermfri Norge</p>
+          <p>Takk for at du er med,<br>Hilsen Skjermfri Barndom</p>
   `;
   MailApp.sendEmail({ to: email, subject, htmlBody });
 }
