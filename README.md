@@ -31,3 +31,12 @@ Siden bruker et ferdig design som heter [Asanke](https://github.com/theNewDynami
 Vi har gjort noen tilpasninger i [static/site.css](https://github.com/skjermfribarndom-no/skjermfribarndom-no.github.io/blob/main/static/site.css)
 
 For endringer av designet - [registrer en ny oppgave](https://github.com/skjermfribarndom-no/skjermfribarndom-no.github.io/issues/new) (forutsetter at man er registret som bruker)
+
+## Skolelista
+
+Tekniske greier. For å laste inn ny versjon av skolelista, trenger man først å ha installert [Docker](https://docker.com) og [NodeJS](https://nodejs.org)
+
+1. `cd utils`
+2. `npm run docker`
+3. `npm run import`
+4. `npm run extract:data`

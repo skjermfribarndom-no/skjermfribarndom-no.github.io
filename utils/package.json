@@ -1,10 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "import": "npm run docker-compose && npm run import:data",
     "docker-compose": "docker compose up --detach",
     "extract:data": "tsx scripts/extract-data.ts > ../static/data.js",
-    "import:data": "npm run import:fylker && npm run import:kommuner && npm run import:skoler",
+    "import": "npm run import:fylker && npm run import:kommuner && npm run import:skoler",
     "import:fylker": "npm run import:fylker:download && npm run import:fylker:psql",
     "import:fylker:download": "download --extract https://nedlasting.geonorge.no/geonorge/Basisdata/Fylker/POSTGIS/Basisdata_0000_Norge_25833_Fylker_POSTGIS.zip --out tmp/",
     "import:fylker:psql": "docker exec -i postgis psql --user postgres < tmp/Basisdata_0000_Norge_25833_Fylker_PostGIS.sql",
