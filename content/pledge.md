@@ -51,6 +51,8 @@ Du finner dem snarlig under fanen “Ressurser”.
 7.	Kun én forelder trenger å signere.
 8.	Når minst 5 familier på samme trinn har signert, blir løftet aktivt – og du får beskjed på e-
 
+[Forsking](/faq)
+
 ## Personvernerklæring:
 
 Skjermfri Barndom prioriterer sikkerheten til din personlige informasjon, og sikrer denne gjennom elektroniske sikkerhetstiltak som beskytter sensitiv informasjon. Når du fyller inn informasjon på løfteskjemaet, lagres den sikkert i vårt datastyringssystem.
