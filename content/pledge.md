@@ -41,14 +41,15 @@ Se våre foreldrepakker – laget for deg som er usikker, vurderer å snu, eller
 Du finner dem snarlig under fanen “Ressurser”.
 
 ## Før du signerer løftet – praktisk info:
-	1.	Oppgi riktig fylke, kommune og skole i skjemaet, så systemet finner riktig trinn.
-	2.	Sjekk hvordan skolen er skrevet på nettsiden eller i kommunens oversikt.
-	3.	Finner du ikke skolen? Send oss en e-post: skjermfri@gmail.com
-	4.	Barnet må gå på skole, ikke i barnehage.
-	5.	Løftet gjelder foreløpig kun Norge, men send oss en e-post dersom det er interesse utenfor Norge.
-	6.	Du trenger kun å signere én gang per barn – systemet oppdaterer automatisk til riktig klassetrinn hvert år.
-	7.	Kun én forelder trenger å signere.
-	8.	Når minst 5 familier på samme trinn har signert, blir løftet aktivt – og du får beskjed på e-
+
+1.	Oppgi riktig fylke, kommune og skole i skjemaet, så systemet finner riktig trinn.
+2.	Sjekk hvordan skolen er skrevet på nettsiden eller i kommunens oversikt.
+3.	Finner du ikke skolen? Send oss en e-post: skjermfri@gmail.com
+4.	Barnet må gå på skole, ikke i barnehage.
+5.	Løftet gjelder foreløpig kun Norge, men send oss en e-post dersom det er interesse utenfor Norge.
+6.	Du trenger kun å signere én gang per barn – systemet oppdaterer automatisk til riktig klassetrinn hvert år.
+7.	Kun én forelder trenger å signere.
+8.	Når minst 5 familier på samme trinn har signert, blir løftet aktivt – og du får beskjed på e-
 
 ## Personvernerklæring:
 
