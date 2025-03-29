@@ -4,7 +4,7 @@ type: page
 menu: main
 featured_image: '/images/Happy-family-relaxing-in-the-park-1662857795_8261x5508.jpeg'
 ---
-**Skjermfri Barndom **er et frivillig foreldreinitiativ, etablert i september 2024.
+**Skjermfri Barndom** er et frivillig foreldreinitiativ, etablert i september 2024.
 Vi jobber for en mer skjermbevisst og sosialt trygg barndom – uten press fra smarttelefon og sosiale medier i barneskolealder.
 
 Vi ønsker å gjøre det lettere for foreldre å vente – og å vente sammen.
