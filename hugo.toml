@@ -7,3 +7,8 @@ defaultContentLanguage = 'no'
 [params]
   description = "Skjermfri barndom"
   custom_css = ["site.css"]
+
+[[params.ananke_socials]]
+name = "instagram"
+url = "https://instagram.com/venttil13"
+
