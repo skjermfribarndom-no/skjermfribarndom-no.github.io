@@ -12,5 +12,3 @@ Mange barn får sin første smarttelefon [8-årsalderen](https://www.medietilsyn
 
 [Trykk her](/pledge) for mer info om løftet.
 
-*Skjermfri Barndom er et prosjekt drevet av Skjermfri Norge.*
-
