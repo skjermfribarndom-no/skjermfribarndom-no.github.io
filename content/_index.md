@@ -18,4 +18,4 @@ Smarttelefoner og sosiale medier kan eksponere barn for skadelig innhold og før
 
 [Trykk her](/pledge) for mer info om løftet.
 
-**Følg oss på instagram der vi deler inspirerende historeier og tips: #venttil 13**
+**Følg oss på instagram** der vi deler inspirerende historier og tips: **#venttil 13**
