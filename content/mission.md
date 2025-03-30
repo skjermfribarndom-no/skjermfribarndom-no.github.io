@@ -6,7 +6,7 @@ featured_image: '/images/Happy-family-relaxing-in-the-park-1662857795_8261x5508.
 ---
 
 ## En barndom uten smarttelefoner og sosiale medier
-Vi jobber for å skape en barneskole uten smarttelefoner og sosiale medier. Målet vårt er å gi barn en trygg og lekbasert barndom, fri for presset og den skadelige påvirkningen fra tidlig bruk av smarttelfoner og sosiale medier.
+Vi jobber for å skape en barneskole uten smarttelefoner og sosiale medier. Målet vårt er å gi barn en trygg og lekbasert barndom, fri for presset og den skadelige påvirkningen fra tidlig bruk av smarttelefoner og sosiale medier.
 
 ### Vårt mål er å:
 
