@@ -1,21 +1,15 @@
 ---
-title: Ressurser
+title: Ressurser 
 type: page
 menu: main
 ---
-Uavhengig av om du signerer løftet eller ikke, vil nettsiden tilby gratis ressurser og verktøy til alle. Vi ønsker å støtte foreldre, barn, ungdom og politikere med solide argumenter, oppdatert forskning og praktiske veiledninger om skjermbruk, sosiale medier og smarttelefoner. Vi forstår at det kan være utfordrende å ta opp disse temaene med andre foreldre, barn og skoler, og derfor tilbyr vi hjelp som kan gjøre det enklere å starte viktige samtaler og tiltak på tvers av ulike arena.
+På denne siden finner du verktøy og veiledninger som kan gjøre det lettere å vente med smarttelefon og sosiale medier – sammen med andre.
 
-Denne siden vil etterhvert få veiledninger som kan bistå deg:
+Alt er laget for å senke terskelen og gjøre det enklere å starte gode samtaler og tiltak – enten du er usikker, nysgjerrig eller allerede i gang.
 
-- Hvordan snakke med andre foreldre om barn, smarttelefoner og sosiale medier?
-- Hvordan snakke med egne barn om skjermbruk og smarttelefoner?
-- Hvordan ta opp problematikken på foreldremøter?
-- Ferdige presentasjoner til foreldremøter
-- Forslag til interpellasjoner og politiske saker
-- Oversikt over alternativer til smarttelefoner
-- Veiledning for å engasjere lokalsamfunnet i kampen mot tidlig smarttelefonbruk
+Her får du steg-for-steg-hjelp, forslag til møter, klassekultur og lokal mobilisering. Innholdet oppdateres og fylles på jevnlig.
 
-## Ressurser
+## Åpne ressursmappen her: 
+https://drive.google.com/drive/folders/1-YslVpLLamr9MW02V4TYoCDZ-AOxpUcd 
 
-* [Presentasjon for foreldremøter: Utsett smarttelefon](https://www.canva.com/design/DAGNESIAdR4/6PWQEp8hCbSwqWcO_AohyA/view) (delt av Hanne Svendsen)
-
+Gjerne send oss en e-post dersom du ikke får åpnet: kontakt@venttil13.no
