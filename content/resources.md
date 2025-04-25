@@ -10,6 +10,6 @@ Alt er laget for å senke terskelen og gjøre det enklere å starte gode samtale
 Her får du steg-for-steg-hjelp, forslag til møter, klassekultur og lokal mobilisering. Innholdet oppdateres og fylles på jevnlig.
 
 ## Åpne ressursmappen her: 
-https://drive.google.com/drive/folders/1-YslVpLLamr9MW02V4TYoCDZ-AOxpUcd 
+[Trykk her for ressursmappe](https://drive.google.com/drive/folders/1-YslVpLLamr9MW02V4TYoCDZ-AOxpUcd) 
 
 Gjerne send oss en e-post dersom du ikke får åpnet: kontakt@venttil13.no
