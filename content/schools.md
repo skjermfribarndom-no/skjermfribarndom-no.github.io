@@ -25,6 +25,9 @@ Signer løftet i dag, spre budskapet og få med deg andre foreldre! Sammen skape
 Asker kommune:
 * Vettre skole, 3 klasse
 
+Nordre Follo kommune:
+* Vevelstadåsen skole
+
 ### INNLANDET
 * Åmot barne og ungdomsskole, 1 klasse 
 
