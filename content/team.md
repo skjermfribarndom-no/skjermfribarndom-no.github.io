@@ -19,3 +19,5 @@ Vi tror det er fullt mulig å ha en barneskole uten smarttelefon og sosiale medi
 **Skjermfri Barndom er for deg som ønsker en barndom med mer lek, mer tilstedeværelse – og mindre skjermpress.**
 
 Initiativet drives av Marthe, Karina og Johannes sammen med andre foreldre – ta gjerne kontakt hvis du vil bidra.
+
+Kontakt: skjermfri@gmail.com
