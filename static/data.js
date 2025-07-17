@@ -1344,6 +1344,7 @@ const skoler = [
   ["55","5514","Ibestad skole","974593122",1,10,"Offentlig","Bygdaveien 132"],
   ["11","1108","Iglemyr skole","974610876",1,7,"Offentlig","Myrullveien 1"],
   ["03","0301","Ila skole","974589869",1,7,"Offentlig","Fougstads gate 10"],
+  ["50","5001","Ila skole","975278905",1,7,"Offentlig","Mellomila 7/9"],
   ["42","4205","Ime skole","874615722",1,7,"Offentlig","Kristiansandsveien 105"],
   ["11","1160","Imsland skule","974618095",1,7,"Offentlig","Ølmedalsvegen 23"],
   ["50","5053","Inderøy ungdomsskole","975269264",8,10,"Offentlig","Vennalivegen 15"],

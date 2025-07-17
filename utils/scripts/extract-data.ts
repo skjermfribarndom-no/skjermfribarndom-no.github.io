@@ -1,4 +1,5 @@
 import pg, { QueryResult } from "pg";
+import { manuelleSkoler } from "./manuelle-skoler";
 
 const { Client } = pg;
 
@@ -19,49 +20,7 @@ async function extractData() {
               order by skolenavn
     `),
   ) as [string, string, string, string, number, number, string, string][];
-  // Manually added. Information from https://data-nsr.udir.no/swagger/
-  skoler.push(
-    [
-      "55",
-      "5501",
-      "Ekrehagen skole",
-      "973255428",
-      1,
-      10,
-      "Privat",
-      "Dramsveien 530",
-    ],
-    [
-      "34",
-      "3407",
-      "Kopperud",
-      "975294935",
-      1,
-      10,
-      "Offentlig",
-      "Vestre Totenveg 234 - 236",
-    ],
-    [
-      "55",
-      "5501",
-      "Gyllenborg skole",
-      "974566311",
-      1,
-      10,
-      "Offentlig",
-      "Skolegata 34/36",
-    ],
-    [
-      "03",
-      "0301",
-      "Lyse montessoriskole",
-      "979554796",
-      1,
-      7,
-      "Privat",
-      "Hoffsjef Løvenskiolds vei 31C",
-    ],
-  );
+  manuelleSkoler.forEach((skole) => skoler.push(skole));
   skoler.sort(
     (a, b) => a[2].localeCompare(b[2], "no") || a[3].localeCompare(b[3]),
   );
@@ -69,7 +28,7 @@ async function extractData() {
   const kommuner = extractResult(
     await client.query(`
               select substring(kommunenummer, 1, 2), kommunenummer, kommunenavn
-              from kommuner_4d2a1f720b994f11baaeae13ee600c8e.kommune
+              from kommuner_95b1247e0400454f971d957671dc3744.kommune
               order by kommunenavn
     `),
   ) as [string, string, string][];
@@ -80,7 +39,7 @@ async function extractData() {
   const fylker = extractResult(
     await client.query(`
               select distinct fylkesnummer, fylkesnavn
-              from fylker_f5ebc56204d5463496260e99cba427e8.fylke
+              from fylker_1dff46b89a214c618be1c2369235144c.fylke
               order by fylkesnavn
     `),
   ) as [string, string][];
