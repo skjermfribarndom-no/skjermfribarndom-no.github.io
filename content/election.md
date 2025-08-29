@@ -32,7 +32,7 @@ Les vurderingene under, og støtt arbeidet for en tryggere digital oppvekst. Har
 Plassert i «best i klassen». Programmet er omfattende og konkret: mobilfri skole, flere trykte bøker, styrking av skolebibliotek, sterk reduksjon av skjerm, og stopp av hjemsending av nettbrett på 1.–4. trinn. Digitale enheter skal blokkere reklame, følge personvernregler og fjerne overvåkingsbaserte løsninger. De vil ha norsk SOME-lov, 15-årsgrense på sosiale medier og streng regulering av markedsføring og overvåkingsteknologi. Minus: partiet har ikke foreslått alderskontroll på sosiale medier, noe Barnevakten mener er nødvendig.
 
 **Helhetsinntrykk:**
-MDG fremstår som offensive og helhetlige: de har levert forslag i Stortinget, har et omfattende program og markerer seg tydelig for skjermfri småskole, personvern og regulering av sosiale medier. Vi savner at 13-årsgrense for smarttelefon ikke er programfestet, men støttet i valgomaten.
+MDG fremstår som offensive og helhetlige: de har levert forslag i Stortinget, har et omfattende program og markerer seg tydelig for skjermfri småskole, personvern og regulering av sosiale medier. Vi savner at 13-årsgrense for smarttelefon ikke er programfestet, selv om de sa ja på spørsmålet.
 
 **Karakter: 6**
 
