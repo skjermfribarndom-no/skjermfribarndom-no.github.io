@@ -4,17 +4,17 @@ type: page
 menu: main
 ---
 
-# Velkommen til valgomaten vår 🎲
+# Velkommen til partiguiden vår 🎲
 
 Hvem er best på barn og skjerm blant partiene på Stortinget i 2025?
 
 ![/images/stortingsvalg2025.png](/images/stortingsvalg2025.png)
 
-Vi har laget en valgomat som viser hvordan partiene stiller seg til spørsmål om smarttelefon, sosiale medier, lærebøker, skjerm i skolen, reklame og personvern med mer. Du finner alle spørsmålene nederst. 
+Vi har laget en partiguide som viser hvordan partiene stiller seg til spørsmål om smarttelefon, sosiale medier, lærebøker, skjerm i skolen, reklame og personvern med mer. Du finner alle spørsmålene nederst. 
 
 Vi har spurt alle partiene på Stortinget, og vurdert dem ut fra tre ting:
 
-1. Svarene de ga i valgomaten
+1. Svarene de ga på våre spørsmål
 2. Om de har vist til konkrete forslag de har fremmet på Stortinget
 3. Hva som står i partiprogrammene (oppsummert av [Barnevakten](https://www.barnevakten.no/partiprogrammene-2025-2029/))
 
