@@ -20,7 +20,7 @@ Vi har spurt alle partiene på Stortinget, og vurdert dem ut fra tre ting:
 
 Noen partier er tydelige og offensive – andre nøler eller skyver ansvaret over på foreldre.
 
-Les vurderingene under, og støtt arbeidet for en tryggere digital oppvekst. Har du barn så signer [løftet](https://skjermfribarndom.no/pledge/).
+Les vurderingene under, og støtt arbeidet for en tryggere digital oppvekst. Har du barn oppforderer vi det til å ta løftet om å vente: [løftet](https://skjermfribarndom.no/pledge/).
 
 
 ## Miljøpartiet De Grønne
