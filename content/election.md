@@ -115,7 +115,7 @@ Plassert midt på skalaen. Nevner mobilfri grunnskole (med lærers unntak), fysi
 **Helhetsinntrykk:**
 Høyre har viktige ja-svar og tydelige prinsipper om lærebøker, SOME-aldersgrense og reklamefri skole. De var også eneste parti som forsikret seg om tolkningen av spørsmålene – et tegn på seriøsitet i prosessen. Likevel skyver de flere spørsmål over på foreldre, avventer EU på sosiale medier og algoritmer, og fremstår derfor som nølende og lite offensive i praktisk politikk. Har riktige prinsipper, men for vage og lite forpliktende i gjennomføring.
 
-**Karakter: 3**
+**Karakter: sterk 3**
 
 
 ## Venstre
@@ -144,7 +144,7 @@ FrP har få konkrete punkter om barns digitale hverdag i sitt program. De legger
 **Helhetsinntrykk:**
 FrP fremstår som partiet som minst ønsker nasjonal regulering. De legger ansvaret på foreldre og skole, sier nei til en nasjonal smarttelefongrense og flere andre viktige tiltak, og står uten en helhetlig plan for barn og skjerm. De få ja-svarene handler om 15-årsgrense for SOME (med forbehold), bøker og reklamefrie læremidler, men dette veier svakt opp mot alle nei-svarene.
 
-**Karakter: 1**
+**Karakter: sterk 1**
 
 
 
