@@ -25,7 +25,7 @@ Les vurderingene under, og støtt arbeidet for en tryggere digital oppvekst. Har
 
 ## Miljøpartiet De Grønne
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 11 ja – 0 nei – 0 vet ikke. MDG svarte ja på alt, og viste i fritekst til forslag de har fremmet på Stortinget: flere lærebøker, reklamefrie digitale læringsressurser, forbud mot overvåkingsreklame og Dokument 8:228 S (2024–2025) om en norsk SOME-lov med redaktøransvar og strengere regulering av algoritmer. De har også tatt til orde for skjermfri småskole (1.–4. trinn), samt mer lek og praktisk læring i skolen.
 
 **Programinnhold (Barnevakten):**
@@ -38,7 +38,7 @@ MDG fremstår som offensive og helhetlige: de har levert forslag i Stortinget, h
 
 ## Rødt
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 11 ja – 0 nei – 0 vet ikke. Rødt svarte konsekvent ja på alle spørsmål og la i fritekst vekt på behovet for strengere regulering. På Stortinget har de fremmet Dokument 8:143 S (2024–2025), et representantforslag om kritisk gransking av skjermbruk i skolen, inkludert forslag om skjermfri spisepause og stopp for hjemsending av enheter på småtrinnet.
 
 **Programinnhold (Barnevakten):**
@@ -52,7 +52,7 @@ Rødt fremstår som svært konsekvente med et stramt og reguleringsorientert pro
 
 ## Arbeiderpartiet
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 7 ja – 0 nei – 4 vet ikke (men ett av «vet ikke»-svarene er i praksis et nei). Ap svarte ja til flere lærebøker, reklamefrie digitale læringsressurser, norsk SOME-lov, 15-årsgrense på sosiale medier, deltakelse uten smarttelefon og strengere reklamevern. De svarte «nei/vet ikke» på 13-årsgrense for smarttelefon, «vet ikke» på nasjonal utredning av aldersgrense, skjermfri spisepause og nasjonale retningslinjer for smarttelefonfrie klasser. I fritekst la de vekt på at foreldre må bestemme selv når barn får smarttelefon, men pekte også på egne initiativer: nasjonale mobilfrie retningslinjer i skolen, 415 mill. til lærebøker, kontantplikten for å sikre deltakelse uten mobil, samt forslag om norsk SOME-lov og reklameforbud i regjering.
 
 **Programinnhold (Barnevakten):**
@@ -65,7 +65,7 @@ Ap er tydelige på viktige områder som sosiale medier, lærebøker og reklamefo
 
 ## Kristelig Folkeparti
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 6 ja – 0 nei – 5 vet ikke. Ja til bl.a. 15-årsgrense for sosiale medier, øremerkede midler til lærebøker, reklamefrie digitale læringsressurser, skjermfrie tiltak, nasjonale retningslinjer for smarttelefonfrie klasser og forbud mot overvåkingsreklame. «Vet ikke» på 13-årsgrense for smarttelefon, utredning av nasjonal grense, Vipps/mobilfri deltakelse, algoritmer i SOME og norsk SOME-lov. I fritekst viste de til forslag om generelt forbud mot overvåkingsreklame (Dok. 8:228 S 2024–2025) og understreket behov for strengere SOME-regulering. At de svarte «vet ikke» på smarttelefonforbud er interessant, siden de faktisk har programfestet en 13-årsgrense for kjøp av smarttelefon – trolig tolket de spørsmålet som et bruksforbud.
 
 **Programinnhold (Barnevakten):**
@@ -78,7 +78,7 @@ KrF markerer seg tydelig på aldersgrenser og reklameforbud, og de har vist hand
 
 ## Sosialistisk Venstreparti
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 7 ja – 1 nei – 3 vet ikke. Ja til øremerkede lærebøker, reklamefrie/personvernvennlige læringsressurser, skjermfri spisepause, mobil/Vipps-uavhengig deltakelse, brukerstyrte algoritmer, norsk SOME-lov og forbud mot overvåkingsreklame.
 Vet ikke på 13-årsgrense for smarttelefon, utredning av nasjonal aldersgrense og nasjonale retningslinjer for smarttelefonfrie klasser. Nei til 15-årsgrense for sosiale medier. I fritekst viste de til barns rett til privatliv og mente aldersgrenser kan bli lite treffsikre, og at dette i stor grad er opp til foreldre.
 
@@ -92,7 +92,7 @@ SV er kritiske til Big Tech og tydelige på prinsipper som personvern, reklamefo
 
 ## Senterpartiet
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 11 ja – 0 nei – 0 vet ikke. Sp svarte ja på samtlige spørsmål. I fritekstfeltet viste de til sitt alternative statsbudsjett, der de foreslo 1,5 mrd. til trykte lærebøker over tre år og 100 mill. til skolebibliotek. På de andre spørsmålene ga de ingen forklaringer.
 
 **Programinnhold (Barnevakten):**
@@ -106,7 +106,7 @@ Sp fremstår positive og sier ja til alt, men mangler forklaringer og tydelige g
 
 ## Høyre
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 7 ja – 1 nei – 3 vet ikke.  Ja til: 15-årsgrense for sosiale medier, øremerkede lærebøker, reklamefrie/personvernvennlige læringsressurser, skjermfri spisepause, deltakelse uten smarttelefon/Vipps, brukerstyring av algoritmer, forbud mot overvåkingsbasert reklame. Vet ikke til: 13-årsgrense for smarttelefon, nasjonale retningslinjer for smarttelefonfrie klasser, egen norsk SOME-lov. Nei til: å utrede nasjonal aldersgrense for kjøp/bruk av smarttelefon. I friteksten vektlegger de foreldres ansvar for smarttelefonalder; ønsker «nedenfra»-initiativer fremfor nasjonale pålegg for klasseavtaler; foretrekker internasjonal (EU/DSA) regulering fremfor særnorsk lov. Høyre var eneste parti som ba om avklaring av «algoritmefri»-kravet (gjelder personvern/ingen ekstern datadeling, ikke ufarlig lokal tilpasning), noe vi synes er bra. 
 
 **Programinnhold (Barnevakten):**
@@ -120,7 +120,7 @@ Høyre har viktige ja-svar og tydelige prinsipper om lærebøker, SOME-aldersgre
 
 ## Venstre
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 6 ja – 1 nei – 4 vet ikke.
 Ja til: flere lærebøker, reklamefrie/personvernvennlige læremidler, nasjonale retningslinjer for smarttelefonfrie klasser, algoritmepåvirkning, norsk SOME-lov og forbud mot overvåkingsreklame. Nei til utredning av nasjonal smarttelefongrense.
 Vet ikke om barn bør vente til 13-årsgrense for smarttelefon, 15-årsgrense for SOME, skjermfri spisepause og Vipps/mobilfri deltakelse. I fritekst svarte de at alder og smarttelefonbruk bør avgjøres av den enkelte familie, ikke reguleres politisk.
@@ -135,7 +135,7 @@ Venstre er tydelige på personvern og reklameforbud, og vil ha et eget algoritme
 
 ## Fremskrittspartiet
 
-**Praktisk politikk (vår valgomat):**
+**Praktisk politikk (våre spørsmål):**
 4 ja – 6 nei – 1 vet ikke. De sa ja til flere lærebøker, reklamefrie læremidler, skjermfri spisepause og forbud mot overvåkingsbasert reklame. Samtidig svarte de nei til de fleste avgjørende spørsmål: 15-årsgrense for sosiale medier, nasjonal aldersgrense for smarttelefon, nasjonale retningslinjer for smarttelefonfrie klasser, norsk SOME-lov og barns rett til å påvirke algoritmer. På 13-årsgrense for smarttelefon svarte de «vet ikke». I fritekst vektla de foreldrenes frihet til å bestemme selv, og ønsker ikke flere politiske reguleringer.
 
 **Programinnhold (Barnevakten):**
