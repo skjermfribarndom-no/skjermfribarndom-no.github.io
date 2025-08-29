@@ -86,7 +86,7 @@ Vet ikke på 13-årsgrense for smarttelefon, utredning av nasjonal aldersgrense 
 Plassert midt på skalaen. Tydelig på mobilforbud i skolen (når ikke pedagogisk begrunnet), flere bøker og skolebibliotek, reklamefrie/personvernvennlige verktøy og utvikling av ikke-kommersielle plattformer. Vil ha tøffere regulering av sosiale medier og forbud mot atferdsrettet reklame. Barnevakten liker retningen, men peker på at ikke-kommersielle plattformer krever stor innsats/ressurser, og at kommersielle forlag også bør kunne levere digitale læremidler.
 
 **Helhetsinntrykk:**
-SV kritiske til Big-Tech, som er bra men sliter med grenser. De er tydelige på viktige prinsipper som personvern og reklameforbud, men nøler på flere avgjørende spørsmål. Minus: de sier nei til 15-årsgrense for SOME, svarer «vet ikke» på smarttelefonalder og retningslinjer som støtter klasseavtaler, og programmet gir få konkrete svar om skolen. Argumentet om «rettigheter ved 15 år» er legitimt, men står svakt opp mot forskningen som viser at alderen 13–15 er den mest sårbare fasen for SOME-skader.
+SV er kritiske til Big Tech og tydelige på prinsipper som personvern, reklameforbud og kontantvern. Samtidig nøler de på flere avgjørende spørsmål: de sier nei til 15-årsgrense for sosiale medier, svarer «vet ikke» på smarttelefonalder og på retningslinjer for klasseavtaler, og programmet gir få konkrete tiltak for skolen. Begrunnelsen om at 15-åringer har rettigheter er legitim, men står svakt opp mot forskningen som viser at alderen 13–15 er den mest sårbare for sosiale medier-skader. Helhetsinntrykket er et parti som peker i riktig retning på prinsipper, men som mangler tydelige grenser og konkrete svar for barn og skole.
 
 **Karakter: 4**
 
@@ -116,8 +116,6 @@ Plassert midt på skalaen. Nevner mobilfri grunnskole (med lærers unntak), fysi
 Høyre har viktige ja-svar og tydelige prinsipper om lærebøker, SOME-aldersgrense og reklamefri skole. De var også eneste parti som forsikret seg om tolkningen av spørsmålene – et tegn på seriøsitet i prosessen. Likevel skyver de flere spørsmål over på foreldre, avventer EU på sosiale medier og algoritmer, og fremstår derfor som nølende og lite offensive i praktisk politikk. Har riktige prinsipper, men for vage og lite forpliktende i gjennomføring.
 
 **Karakter: 3**
-
-
 
 
 ## Venstre
