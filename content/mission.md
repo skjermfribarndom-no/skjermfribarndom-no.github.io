@@ -1,7 +1,8 @@
 ---
 title: Målsetning
 type: page
-menu: main
+unlisted: true
+section: None
 featured_image: '/images/Happy-family-relaxing-in-the-park-1662857795_8261x5508.jpeg'
 ---
 
