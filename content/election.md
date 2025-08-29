@@ -136,13 +136,13 @@ Venstre er tydelige på personvern og reklameforbud, og vil ha et eget algoritme
 ## Fremskrittspartiet
 
 **Praktisk politikk (våre spørsmål):**
-4 ja – 6 nei – 1 vet ikke. De sa ja til flere lærebøker, reklamefrie læremidler, skjermfri spisepause og forbud mot overvåkingsbasert reklame. Samtidig svarte de nei til de fleste avgjørende spørsmål: 15-årsgrense for sosiale medier, nasjonal aldersgrense for smarttelefon, nasjonale retningslinjer for smarttelefonfrie klasser, norsk SOME-lov og barns rett til å påvirke algoritmer. På 13-årsgrense for smarttelefon svarte de «vet ikke». I fritekst vektla de foreldrenes frihet til å bestemme selv, og ønsker ikke flere politiske reguleringer.
+4 ja – 6 nei – 1 vet ikke. De sa ja til 15-årsgrense for sosiale medier (med forbehold om aldersverifisering), ja til nok lærebøker, ja til reklamefrie læremidler, og ja til forbud mot overvåkingsbasert reklame. Samtidig svarte de nei til nasjonal aldersgrense for smarttelefon, nei til skjermfri spisetid, nei til nasjonale retningslinjer for smarttelefonfrie klasser, nei til norsk SOME-lov og nei deltakelse på fritiden uten krav om mobil/vipps. På 13-årsgrense for smarttelefon svarte de «vet ikke». I fritekstene vektla de foreldrenes frihet til å bestemme selv og ønsker ikke flere politiske reguleringer.
 
 **Programinnhold (Barnevakten):**
 FrP har få konkrete punkter om barns digitale hverdag i sitt program. De legger vekt på foreldres ansvar, men har ikke helhetlige forslag til regulering av skjermbruk, aldersgrenser eller digital skolehverdag.
 
 **Helhetsinntrykk:**
-FrP fremstår som partiet som minst ønsker nasjonal regulering. De legger ansvaret på foreldre og skole, sier nei til både SOME- og smarttelefongrenser, og står uten en helhetlig plan for barn og skjerm. De få ja-svarene handler om bøker og reklamefrie læremidler, men dette veier svakt opp mot alle nei-svarene.
+FrP fremstår som partiet som minst ønsker nasjonal regulering. De legger ansvaret på foreldre og skole, sier nei til en nasjonal smarttelefongrense og flere andre viktige tiltak, og står uten en helhetlig plan for barn og skjerm. De få ja-svarene handler om 15-årsgrense for SOME (med forbehold), bøker og reklamefrie læremidler, men dette veier svakt opp mot alle nei-svarene.
 
 **Karakter: 1**
 
