@@ -96,7 +96,7 @@ SV er kritiske til Big Tech og tydelige på prinsipper som personvern, reklamefo
 11 ja – 0 nei – 0 vet ikke. Sp svarte ja på samtlige spørsmål. I fritekstfeltet viste de til sitt alternative statsbudsjett, der de foreslo 1,5 mrd. til trykte lærebøker over tre år og 100 mill. til skolebibliotek. På de andre spørsmålene ga de ingen forklaringer.
 
 **Programinnhold (Barnevakten):**
-Sp svarer ja til alt i valgomaten, men gir nesten ingen utdypende begrunnelser. De erkjenner at økt skjermbruk kan ha negative konsekvenser, og viser vilje til tiltak som flere papirbøker, skjermfrie pauser og aldersgrense for sosiale medier. Samtidig er politikken lite konkret: de har ikke programfestet tydelige nok tiltak, og har heller ikke fulgt opp med forslag i Stortinget. Helhetsinntrykket er et parti som vil mye på papiret, men som fremstår utydelig når det gjelder gjennomføring. 
+Plassert midt på treet. De erkjenner at økt skjermbruk kan ha negative konsekvenser, og vil satse på leselyst, flere papirbøker og styrking av digitale ferdigheter. De støtter en aldersgrense for SOME med digital verifisering, vil forhindre overgrep på nett og gi bedre hjelp ved mobbing og uønsket deling. Samtidig har de ikke landet på en konkret aldersgrense for SOME, og sier selv at metodevalget i skolen må overlates til lærerne.
 
 **Helhetsinntrykk:**
 Sp fremstår positive og sier ja til alt, men mangler forklaringer og tydelige grep. Pluss: satser tungt på lærebøker og bibliotek. Minus: de har ikke tatt stilling til en konkret SOME-alder og overlater mye ansvar til lærere og foreldre i stedet for å sette nasjonale rammer. Sp gir inntrykk av å ville mye, men politikken gjenspeiles verken tydelig i programmet eller i forslag  de har fremmet på Stortinget.
