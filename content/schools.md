@@ -19,7 +19,7 @@ Stadig flere foreldre velger å vente med smarttelefon til ungdomsskolen. Når f
 Når en klasse når fem signaturer, sender Skjermfri Barndom en e-post til foreseatte, som har sagt ja til dette,  en liste over familier i barnets klasse som også har valgt å vente. Etter hvert som flere blir med, vil foresatte fortsette å motta oppdateringer.
 
 ### 📋 Oversikt over aktive løfter
-NeNedenfor finner du en liste over aktive løfter. Denne oversikten ble sist oppdatert mars 2025. Siden da har over 2000 nye familier signert, og vi jobber nå med å matche disse etter trinn. En fullstendig oppdatert liste publiseres snart.
+Nedenfor finner du en liste over aktive løfter. Denne oversikten ble sist oppdatert mars 2025. Siden da har over 2000 nye familier signert, og vi jobber nå med å matche disse etter trinn. En fullstendig oppdatert liste publiseres snart.
 
 Dette er altså kun løfter som allerede er aktive. Mange skoler er svært nær – ofte mangler det bare én eller to signaturer. Kanskje er det nettopp din signatur som får klassen over terskelen?
 
