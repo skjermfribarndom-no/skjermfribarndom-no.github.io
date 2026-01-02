@@ -1,6 +1,8 @@
 {
   "type": "module",
   "scripts": {
+    "pledges:download": "tsx --env-file .env scripts/download-pledges.ts > tmp/pledges.json",
+    "pledges:summarize": "tsx scripts/summarize-pledges.ts > ../static/pledgeData.js",
     "docker-compose": "docker compose up --detach",
     "extract:data": "tsx scripts/extract-data.ts > ../static/data.js",
     "import": "npm run import:fylker && npm run import:kommuner && npm run import:skoler",
@@ -19,7 +21,7 @@
     "@types/node": "^22.7.5",
     "@types/pg": "^8.11.10",
     "download-cli": "^1.1.1",
-    "prettier": "^3.3.3",
+    "prettier": "^3.7.4",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3",
     "wget-improved": "^3.4.0"
@@ -27,6 +29,7 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "csv-parse": "^5.5.6",
+    "googleapis": "^169.0.0",
     "pg": "^8.13.0"
   }
 }

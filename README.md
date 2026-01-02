@@ -32,11 +32,26 @@ Vi har gjort noen tilpasninger i [static/site.css](https://github.com/skjermfrib
 
 For endringer av designet - [registrer en ny oppgave](https://github.com/skjermfribarndom-no/skjermfribarndom-no.github.io/issues/new) (forutsetter at man er registret som bruker)
 
+## Skriving/utvikling lokalt
+
+Ved å laste ned 
+
 ## Skolelista
 
 Tekniske greier. For å laste inn ny versjon av skolelista, trenger man først å ha installert [Docker](https://docker.com) og [NodeJS](https://nodejs.org)
 
 1. `cd utils`
-2. `npm run docker`
-3. `npm run import`
-4. `npm run extract:data`
+2. `npm install`
+3. `npm run docker-compose`
+4. `npm run import`
+5. Oppdatert schema navn i `utils/scripts/extract-data.d.ts` (bør automatiseres på sikt)
+6. `npm run extract:data`
+
+## Løftene
+
+Tekiske greier. For å oppdatere, må man først ha installert [NodeJS](https://nodejs.org)
+
+1. `cd utils`
+2. `npm install`
+3. `npm run pledges:download`
+3. `npm run pledges:summarize`
