@@ -1,67 +1,95 @@
 <div>
-    <p>
-        <span id="pledge-count">Over 2000</span> familier nasjonalt har signert – bli med på bevegelsen!
-    </p>
-    <p>
-        Nedenfor finner du en liste over aktive løfter. Denne listen ble sist oppdatert <span id="pledge-list-updated">3. mars 2025</span>.
-    </p>
-    <div id="pledge-summary"></div>
+  <p>
+    <span id="pledge-count">Over 2000</span> familier nasjonalt har signert –
+    bli med på bevegelsen!
+  </p>
+  <p>
+    Nedenfor finner du en liste over aktive løfter. Denne listen ble sist
+    oppdatert <span id="pledge-list-updated">3. mars 2025</span>.
+  </p>
+  <div id="pledge-summary"></div>
 </div>
 <script src="/pledgeData.js"></script>
 <script>
-    // @ts-check
-    const date = new Date(pledges.date);
+  // @ts-check
+  const date = new Date(pledges.date);
 
-    document.getElementById("pledge-list-updated").innerText = date.toLocaleString("nb-NO", {
-        day: "numeric",
-        month: "long",
-        year: "numeric"
+  document.getElementById("pledge-list-updated").innerText =
+    date.toLocaleString("nb-NO", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
     });
 
-    document.getElementById("pledge-count").innerText = pledges.pledgeCount;
+  document.getElementById("pledge-count").innerText = pledges.pledgeCount;
 
-    const pledgeSummary = document.getElementById("pledge-summary");
+  const pledgeSummary = document.getElementById("pledge-summary");
 
-    function ordinal(n) {
-        return [undefined, "første", "andre", "tredje", "fjerde", "femte", "sjette", "syvende", "åttende", "niende", "tiende", "ellevte"][n] || `${n}.`
-    }
+  function ordinal(n) {
+    return (
+      [
+        undefined,
+        "første",
+        "andre",
+        "tredje",
+        "fjerde",
+        "femte",
+        "sjette",
+        "syvende",
+        "åttende",
+        "niende",
+        "tiende",
+        "ellevte",
+      ][n] || `${n}.`
+    );
+  }
 
-    Object.values(pledges.pledgesByFylke)
+  Object.values(pledges.pledgesByFylke)
+    .sort((a, b) => a.navn.localeCompare(b.navn))
+    .forEach(({ navn, kommuner }) => {
+      const fylkeDiv = document.createElement("details");
+      fylkeDiv.classList.add("fylke");
+      const fylkeSummary = document.createElement("summary");
+      fylkeDiv.appendChild(fylkeSummary);
+      let skolerForFylke = 0;
+      Object.values(kommuner)
         .sort((a, b) => a.navn.localeCompare(b.navn))
-        .forEach(({navn, kommuner}) => {
-            const fylkeDiv = document.createElement("details");
-            fylkeDiv.classList.add("fylke");
-            fylkeDiv.setAttribute("open", "open");
-            const fylkeSummary = document.createElement("summary");
-            fylkeDiv.appendChild(fylkeSummary);
-            let skolerForFylke = 0;
-            Object.values(kommuner).sort((a, b) => a.navn.localeCompare(b.navn)).forEach(({navn, skoler}) => {
-                let skoleCount = Object.keys(skoler).length;
-                if (skoleCount === 0) return;
-                skolerForFylke += skoleCount;
-                const kommuneDiv = document.createElement("div");
-                const kommuneHeader = document.createElement("h4");
-                kommuneHeader.innerText = `${navn} - ${skoleCount} skoler`;
-                kommuneDiv.appendChild(kommuneHeader);
+        .forEach(({ navn, skoler }) => {
+          let skoleCount = Object.keys(skoler).length;
+          if (skoleCount === 0) return;
+          skolerForFylke += skoleCount;
+          const kommuneDiv = document.createElement("div");
+          const kommuneHeader = document.createElement("h4");
+          kommuneHeader.innerText = `${navn} - ${skoleCount} skoler`;
+          kommuneDiv.appendChild(kommuneHeader);
 
-                const skoleUl = document.createElement("ul");
-                Object.entries(skoler)
-                    .sort(([, a], [, b]) => a.navn.localeCompare(b.navn))
-                    .forEach(([orgnr, {navn, data: {total, perKlassetrinn}}]) => {
-                        const skoleLi = document.createElement("li");
-                        skoleLi.dataset["orgnr"] = orgnr;
-                        let trinnSummary = Object.entries(perKlassetrinn)
-                            .filter(([, v]) => v >= 5)
-                            .map(([k, v]) => `${v} i ${ordinal(k)} trinn`)
-                            .join(", ");
-                        const trinn = trinnSummary.length > 0  ? " - " + trinnSummary : "";
-                        skoleLi.innerText = `${navn} (${total} underskifter${trinn})`;
-                        skoleUl.appendChild(skoleLi)
-                    });
-                kommuneDiv.appendChild(skoleUl);
-                fylkeDiv.appendChild(kommuneDiv);
-            });
-            fylkeSummary.innerText = `${navn} - ${skolerForFylke} skoler`;
-            pledgeSummary.appendChild(fylkeDiv);
-        })
+          const skoleUl = document.createElement("ul");
+          Object.entries(skoler)
+            .sort(([, a], [, b]) => a.navn.localeCompare(b.navn))
+            .forEach(
+              ([
+                orgnr,
+                {
+                  navn,
+                  data: { total, perKlassetrinn },
+                },
+              ]) => {
+                const skoleLi = document.createElement("li");
+                skoleLi.dataset["orgnr"] = orgnr;
+                let trinnSummary = Object.entries(perKlassetrinn)
+                  .filter(([, v]) => v >= 5)
+                  .map(([k, v]) => `${v} i ${ordinal(k)} trinn`)
+                  .join(", ");
+                const trinn =
+                  trinnSummary.length > 0 ? " - " + trinnSummary : "";
+                skoleLi.innerText = `${navn} (${total} underskifter${trinn})`;
+                skoleUl.appendChild(skoleLi);
+              },
+            );
+          kommuneDiv.appendChild(skoleUl);
+          fylkeDiv.appendChild(kommuneDiv);
+        });
+      fylkeSummary.innerText = `${navn} - ${skolerForFylke} skoler`;
+      pledgeSummary.appendChild(fylkeDiv);
+    });
 </script>
