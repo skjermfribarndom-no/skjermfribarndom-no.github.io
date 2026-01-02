@@ -1,6 +1,9 @@
 <form
   action='{{getenv "HUGO_CLOUDFLARE_URL" | default "https://skjermfribarndom.skjermfribarndom.workers.dev"}}/submit'
-  onsubmit="onSubmit(); return false;"
+  onsubmit="
+    onSubmit();
+    return false;
+  "
   class="pledge"
   id="pledgeForm"
 >
@@ -100,8 +103,9 @@
     </p>
   </fieldset>
 </form>
-<script src="/data.js"></script>
-<script>
+<script type="module">
+  import { fylker, kommuner, skoler } from "/data.js";
+
   async function onSubmit() {
     const form = document.getElementById("pledgeForm");
     const fieldset = form.querySelector("fieldset");
