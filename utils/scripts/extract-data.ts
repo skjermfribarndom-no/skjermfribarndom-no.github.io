@@ -1,5 +1,5 @@
 import pg, { QueryResult } from "pg";
-import { manuelleSkoler } from "./manuelle-skoler";
+import { manuelleSkoler } from "./manuelle-skoler.js";
 
 const { Client } = pg;
 
@@ -14,9 +14,9 @@ async function extractData() {
   await client.connect();
   const skoler = extractResult(
     await client.query(`
-              select fylkesnummer, kommunenummer, skolenavn, organisasjonsnummer, lavestetrinn, hoyestetrinn, eierforhold, besoksadresse_besoksadresse_adressenavn
-              from grunnskoler_3697913259634315b061b324a3f2cf59.grunnskole
-              where idrift = 'Ja'
+              select fylkesnummer, kommunenummer, skolenavn, organisasjonsnummer, lavestetrinn, hoyestetrinn, eierforhold, besoksadresse_adressenavn
+              from grunnskoler_3a4abd9431b343bf98983af1b042ba7d.grunnskole
+              where idrift
               order by skolenavn
     `),
   ) as [string, string, string, string, number, number, string, string][];
@@ -28,7 +28,7 @@ async function extractData() {
   const kommuner = extractResult(
     await client.query(`
               select substring(kommunenummer, 1, 2), kommunenummer, kommunenavn
-              from kommuner_95b1247e0400454f971d957671dc3744.kommune
+              from kommuner_627ee106072240e99d2b21ec4717bf01.kommune
               order by kommunenavn
     `),
   ) as [string, string, string][];
@@ -38,25 +38,26 @@ async function extractData() {
 
   const fylker = extractResult(
     await client.query(`
-              select distinct fylkesnummer, fylkesnavn
-              from fylker_1dff46b89a214c618be1c2369235144c.fylke
-              order by fylkesnavn
+              select fylkesnummer, coalesce(a.navn, fylke.fylkesnavn)
+              from fylker_a60155918c4a47c2b78f4ab52fc2bfa4.fylke
+                left outer join fylker_a60155918c4a47c2b78f4ab52fc2bfa4.administrativenhetnavn a on fylke.lokalid = a.fylke_fk and a.sprak = 'nor'
+              order by coalesce(a.navn, fylke.fylkesnavn)
     `),
   ) as [string, string][];
   fylker.sort((a, b) => a[1].localeCompare(b[1], "no"));
 
   console.log(
-    "const fylker = [\n  " +
+    "export const fylker = [\n  " +
       fylker.map((f) => JSON.stringify(f)).join(",\n  ") +
       "\n];",
   );
   console.log(
-    "const kommuner = [\n  " +
+    "export const kommuner = [\n  " +
       kommuner.map((f) => JSON.stringify(f)).join(",\n  ") +
       "\n];",
   );
   console.log(
-    "const skoler = [\n  " +
+    "export const skoler = [\n  " +
       skoler.map((f) => JSON.stringify(f)).join(",\n  ") +
       "\n];",
   );
