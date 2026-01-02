@@ -31,19 +31,34 @@ async function findOrCreateLabel(name: string) {
 }
 
 const labelId = await findOrCreateLabel(reviewLabel);
-console.log(labelId);
 
 for (const recipient of recipients) {
+  const existingMails = await gmail.users.messages.list({
+    userId: "me",
+    q: `to:${recipient.recipientEmail} label:template/${recipient.emailContent.type}`,
+  });
+  if (existingMails.data.messages?.length > 0) {
+    console.log(
+      `${recipient.recipientEmail} has already received ${recipient.emailContent.type}. Skipping!`,
+    );
+    continue;
+  }
+  console.log(
+    `Creating draft ${recipient.emailContent.type} to ${recipient.recipientEmail}`,
+  );
+
   const email = createMailFromTemplate(recipient);
-  console.log("Creating draft", email.subject);
   const message = createGmail(email);
   const mail = await gmail.users.drafts.create({
     userId: "me",
     requestBody: { message: { raw: message } },
   });
+  const templateLabelId = await findOrCreateLabel(
+    "template/" + recipient.emailContent.type,
+  );
   await gmail.users.messages.modify({
     userId: "me",
     id: mail.data.message.id,
-    requestBody: { addLabelIds: [labelId] },
+    requestBody: { addLabelIds: [labelId, templateLabelId] },
   });
 }
