@@ -12,9 +12,9 @@ auth.setCredentials({
 });
 const gmail = google.gmail({ auth, version: "v1" });
 
-const reviewLabel = "BULK_REVIEW";
-
+const labelCache = new Map<string, string>();
 async function findOrCreateLabel(name: string) {
+  if (labelCache.has(name)) return labelCache.get(name);
   const res = await gmail.users.labels.list({ userId: "me" });
   const labels = res.data.labels as { id: string; name: string }[];
   const existing = labels.find((l) => l.name === name);
@@ -27,11 +27,11 @@ async function findOrCreateLabel(name: string) {
       messageListVisibility: "show",
     },
   });
+  labelCache.set(name, newLabel.data.id);
   return newLabel.data.id;
 }
 
-const labelId = await findOrCreateLabel(reviewLabel);
-
+const labelId = await findOrCreateLabel("BULK_REVIEW");
 for (const recipient of recipients) {
   const existingMails = await gmail.users.messages.list({
     userId: "me",
@@ -47,18 +47,18 @@ for (const recipient of recipients) {
     `Creating draft ${recipient.emailContent.type} to ${recipient.recipientEmail}`,
   );
 
-  const email = createMailFromTemplate(recipient);
-  const message = createGmail(email);
-  const mail = await gmail.users.drafts.create({
+  const draft = await gmail.users.drafts.create({
     userId: "me",
-    requestBody: { message: { raw: message } },
+    requestBody: {
+      message: { raw: createGmail(createMailFromTemplate(recipient)) },
+    },
   });
   const templateLabelId = await findOrCreateLabel(
     "template/" + recipient.emailContent.type,
   );
   await gmail.users.messages.modify({
     userId: "me",
-    id: mail.data.message.id,
+    id: draft.data.message.id,
     requestBody: { addLabelIds: [labelId, templateLabelId] },
   });
 }

@@ -24,8 +24,19 @@ ${data.foresatteSomDeler.map((p) => `* ${p.navn} <${p.email}>`).join("\n")}
 
 Du har ikke valgt å dele din kontaktinformasjon og de andre foreldrene har derfor ikke mottatt denne.
 
-Hilsen skjermfri barndom  
+Hilsen skjermfri barndom
 `,
-    html: undefined,
+    html: `<p>Hei ${recipient.recipientName}</p>
+
+<p>Det er nå ${data.pledgeCount} som har signert løftet på ${data.skole} i ${trinn(data.trinn)}. De som har valgt å sin kontaktinfo er følgende:</p>
+
+<ul>
+${data.foresatteSomDeler.map((p) => `<li>${p.navn} &lt;${p.email}&gt;</li>`).join("\n")}
+</ul>
+
+<p>Du har ikke valgt å dele din kontaktinformasjon og de andre foreldrene har derfor ikke mottatt denne.</p>
+
+<p>Hilsen skjermfri barndom</p>
+`,
   };
 }
