@@ -3,6 +3,9 @@
   "scripts": {
     "pledges:download": "tsx --env-file .env scripts/download-pledges.ts > tmp/pledges.json",
     "pledges:summarize": "tsx scripts/summarize-pledges.ts > ../static/pledgeData.js",
+    "email:extract": "tsx scripts/extract-email.ts > scripts/tmp/recipients.ts",
+    "email:authenticate": "tsx --env-file .env scripts/get-oauth-token.ts",
+    "email:draft": "tsx --env-file .env scripts/create-draft-emails.ts",
     "docker-compose": "docker compose up --detach",
     "extract:data": "tsx scripts/extract-data.ts > ../static/data.js",
     "import": "npm run import:fylker && npm run import:kommuner && npm run import:skoler",
