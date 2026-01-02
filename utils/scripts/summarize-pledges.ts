@@ -23,15 +23,25 @@ const data: {
   "Skole orgnr": string;
   Skole: string;
   Klassetrinn: KlassetrinnType;
+  Registrert: string;
 }[] = jsonPledges as any;
 
 const summary: SchoolPledgeMap = {};
 
-for (const { "Skole orgnr": orgnr, Klassetrinn } of data) {
+for (const { "Skole orgnr": orgnr, Klassetrinn, Registrert } of data) {
   if (!summary[orgnr]) summary[orgnr] = { total: 0, perKlassetrinn: {} };
+
+  let trinn = parseInt(Klassetrinn);
+  const registrert = new Date(Registrert);
+  if (registrert.getTime() < new Date(2024, 8, 18).getTime()) {
+    if (++trinn > 10) {
+      continue;
+    }
+  }
+  const klassetrinn = trinn.toString() as KlassetrinnType;
   summary[orgnr].total++;
-  summary[orgnr].perKlassetrinn[Klassetrinn] ||= 0;
-  summary[orgnr].perKlassetrinn[Klassetrinn]++;
+  summary[orgnr].perKlassetrinn[klassetrinn] ||= 0;
+  summary[orgnr].perKlassetrinn[klassetrinn]++;
 }
 
 const schools = Object.fromEntries(

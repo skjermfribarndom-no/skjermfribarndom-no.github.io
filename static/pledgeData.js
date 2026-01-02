@@ -1,5 +1,5 @@
 const pledges = {
-  "date": "2026-01-02T18:35:58.403Z",
+  "date": "2026-01-02T19:08:49.104Z",
   "pledgeCount": 2214,
   "schools": {
     "874222062": {
@@ -92,7 +92,8 @@ const pledges = {
     "916513968": {
       "total": 6,
       "perKlassetrinn": {
-        "1": 4,
+        "1": 1,
+        "2": 3,
         "3": 2
       }
     },
@@ -148,8 +149,8 @@ const pledges = {
       "total": 13,
       "perKlassetrinn": {
         "1": 6,
-        "2": 5,
-        "3": 2
+        "2": 4,
+        "3": 3
       }
     },
     "973601997": {
@@ -218,7 +219,8 @@ const pledges = {
     "974552124": {
       "total": 6,
       "perKlassetrinn": {
-        "1": 2,
+        "1": 1,
+        "2": 1,
         "3": 2,
         "5": 2
       }
@@ -290,7 +292,8 @@ const pledges = {
       "perKlassetrinn": {
         "1": 1,
         "2": 1,
-        "3": 5
+        "3": 3,
+        "4": 2
       }
     },
     "974584654": {
@@ -368,7 +371,8 @@ const pledges = {
       "total": 5,
       "perKlassetrinn": {
         "2": 3,
-        "3": 2
+        "3": 1,
+        "4": 1
       }
     },
     "974593548": {
@@ -512,8 +516,8 @@ const pledges = {
     "975270580": {
       "total": 5,
       "perKlassetrinn": {
-        "1": 3,
-        "2": 2
+        "1": 2,
+        "2": 3
       }
     },
     "975270955": {
@@ -585,10 +589,11 @@ const pledges = {
     "975275604": {
       "total": 20,
       "perKlassetrinn": {
-        "1": 3,
-        "2": 8,
-        "3": 1,
-        "4": 8
+        "1": 2,
+        "2": 1,
+        "3": 9,
+        "4": 1,
+        "5": 7
       }
     },
     "975278492": {
@@ -692,8 +697,7 @@ const pledges = {
     "975296911": {
       "total": 8,
       "perKlassetrinn": {
-        "2": 7,
-        "3": 1
+        "3": 8
       }
     },
     "975297519": {
@@ -747,7 +751,8 @@ const pledges = {
     "979128134": {
       "total": 6,
       "perKlassetrinn": {
-        "1": 4,
+        "1": 3,
+        "2": 1,
         "3": 2
       }
     },
@@ -771,7 +776,8 @@ const pledges = {
     "980017524": {
       "total": 6,
       "perKlassetrinn": {
-        "1": 6
+        "1": 5,
+        "2": 1
       }
     },
     "980074919": {
@@ -939,10 +945,11 @@ const pledges = {
               "data": {
                 "total": 20,
                 "perKlassetrinn": {
-                  "1": 3,
-                  "2": 8,
-                  "3": 1,
-                  "4": 8
+                  "1": 2,
+                  "2": 1,
+                  "3": 9,
+                  "4": 1,
+                  "5": 7
                 }
               }
             },
@@ -1182,7 +1189,8 @@ const pledges = {
               "data": {
                 "total": 6,
                 "perKlassetrinn": {
-                  "1": 6
+                  "1": 5,
+                  "2": 1
                 }
               }
             }
@@ -1505,7 +1513,8 @@ const pledges = {
               "data": {
                 "total": 6,
                 "perKlassetrinn": {
-                  "1": 2,
+                  "1": 1,
+                  "2": 1,
                   "3": 2,
                   "5": 2
                 }
@@ -1562,7 +1571,8 @@ const pledges = {
                 "perKlassetrinn": {
                   "1": 1,
                   "2": 1,
-                  "3": 5
+                  "3": 3,
+                  "4": 2
                 }
               }
             },
@@ -1592,7 +1602,8 @@ const pledges = {
                 "total": 5,
                 "perKlassetrinn": {
                   "2": 3,
-                  "3": 2
+                  "3": 1,
+                  "4": 1
                 }
               }
             },
@@ -1982,8 +1993,8 @@ const pledges = {
               "data": {
                 "total": 5,
                 "perKlassetrinn": {
-                  "1": 3,
-                  "2": 2
+                  "1": 2,
+                  "2": 3
                 }
               }
             }
@@ -2241,8 +2252,7 @@ const pledges = {
               "data": {
                 "total": 8,
                 "perKlassetrinn": {
-                  "2": 7,
-                  "3": 1
+                  "3": 8
                 }
               }
             }
@@ -3396,7 +3406,8 @@ const pledges = {
               "data": {
                 "total": 6,
                 "perKlassetrinn": {
-                  "1": 4,
+                  "1": 1,
+                  "2": 3,
                   "3": 2
                 }
               }
@@ -3418,8 +3429,8 @@ const pledges = {
                 "total": 13,
                 "perKlassetrinn": {
                   "1": 6,
-                  "2": 5,
-                  "3": 2
+                  "2": 4,
+                  "3": 3
                 }
               }
             },
@@ -3517,7 +3528,8 @@ const pledges = {
               "data": {
                 "total": 6,
                 "perKlassetrinn": {
-                  "1": 4,
+                  "1": 3,
+                  "2": 1,
                   "3": 2
                 }
               }

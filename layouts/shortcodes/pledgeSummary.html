@@ -22,11 +22,16 @@
 
     const pledgeSummary = document.getElementById("pledge-summary");
 
+    function ordinal(n) {
+        return [undefined, "første", "andre", "tredje", "fjerde", "femte", "sjette", "syvende", "åttende", "niende", "tiende", "ellevte"][n] || `${n}.`
+    }
+
     Object.values(pledges.pledgesByFylke)
         .sort((a, b) => a.navn.localeCompare(b.navn))
         .forEach(({navn, kommuner}) => {
             const fylkeDiv = document.createElement("details");
             fylkeDiv.classList.add("fylke");
+            fylkeDiv.setAttribute("open", "open");
             const fylkeSummary = document.createElement("summary");
             fylkeDiv.appendChild(fylkeSummary);
             let skolerForFylke = 0;
@@ -42,10 +47,15 @@
                 const skoleUl = document.createElement("ul");
                 Object.entries(skoler)
                     .sort(([, a], [, b]) => a.navn.localeCompare(b.navn))
-                    .forEach(([orgnr, {navn, data: {total}}]) => {
+                    .forEach(([orgnr, {navn, data: {total, perKlassetrinn}}]) => {
                         const skoleLi = document.createElement("li");
                         skoleLi.dataset["orgnr"] = orgnr;
-                        skoleLi.innerText = `${navn} (${total} underskifter)`;
+                        let trinnSummary = Object.entries(perKlassetrinn)
+                            .filter(([, v]) => v >= 5)
+                            .map(([k, v]) => `${v} i ${ordinal(k)} trinn`)
+                            .join(", ");
+                        const trinn = trinnSummary.length > 0  ? " - " + trinnSummary : "";
+                        skoleLi.innerText = `${navn} (${total} underskifter${trinn})`;
                         skoleUl.appendChild(skoleLi)
                     });
                 kommuneDiv.appendChild(skoleUl);
