@@ -19,7 +19,23 @@ async function extractData() {
               where idrift
               order by skolenavn
     `),
-  ) as [string, string, string, string, number, number, string, string][];
+  ) as [
+    string,
+    string,
+    string,
+    string,
+    number | null,
+    number | null,
+    string,
+    string | null,
+  ][];
+
+  for (const [, , manuellOrgnr] of manuelleSkoler) {
+    if (skoler.find(([, , , orgnr]) => orgnr === manuellOrgnr)) {
+      console.warn("Manuell skole finnes i databasen", manuellOrgnr);
+    }
+  }
+
   manuelleSkoler.forEach((skole) => skoler.push(skole));
   skoler.sort(
     (a, b) => a[2].localeCompare(b[2], "no") || a[3].localeCompare(b[3]),
