@@ -1,19 +1,8 @@
 import { KlassetrinnType } from "../../static/pledgeData.js";
-import jsonPledges from "../tmp/pledges.json";
 import { skoler } from "../../static/data.js";
 
 import { Email } from "./email/template/email.js";
-
-const data: {
-  Status: "Email sent" | "Registrert med gammelt skjema" | "Confirmed";
-  "Skole orgnr": string;
-  Skole: string;
-  "Navn foresatt": string;
-  Email: string;
-  Klassetrinn: KlassetrinnType;
-  "Samtykke dele": "on" | "";
-  Registrert: string;
-}[] = jsonPledges as any;
+import { readPledges } from "./read-pledges.js";
 
 const summary: Record<
   string,
@@ -41,41 +30,31 @@ const skolerPerOrgnr = new Map(
 );
 
 for (const {
-  "Skole orgnr": orgnr,
-  Skole,
-  Klassetrinn,
-  Registrert,
-  "Navn foresatt": foresattNavn,
-  Email: foresattEmail,
-  "Samtykke dele": samtykkeDele,
-  Status,
-} of data) {
-  if (!summary[orgnr]) {
-    let skole = skolerPerOrgnr.get(orgnr);
+  foresattNavn,
+  foresattEmail,
+  skoleOrgnr,
+  klassetrinn,
+  samtykkeDele,
+  bekreftet,
+} of readPledges()) {
+  if (!summary[skoleOrgnr]) {
+    let skole = skolerPerOrgnr.get(skoleOrgnr);
     if (!skole) {
-      console.error("Missing skole", Skole, orgnr);
+      console.error("Missing skole", skoleOrgnr);
       continue;
     }
     // TODO: Testing
     if (skole.navn !== "Biss Sentrum AS") continue;
     const { navn } = skole;
-    summary[orgnr] = { pledgesPerTrinn: {}, navn };
+    summary[skoleOrgnr] = { pledgesPerTrinn: {}, navn };
   }
 
-  let trinn = parseInt(Klassetrinn);
-  const registrert = new Date(Registrert);
-  if (registrert.getTime() < new Date(2024, 8, 18).getTime()) {
-    if (++trinn > 10) {
-      continue;
-    }
-  }
-  const klassetrinn = trinn.toString() as KlassetrinnType;
-  summary[orgnr].pledgesPerTrinn[klassetrinn] ||= [];
-  summary[orgnr].pledgesPerTrinn[klassetrinn].push({
+  summary[skoleOrgnr].pledgesPerTrinn[klassetrinn] ||= [];
+  summary[skoleOrgnr].pledgesPerTrinn[klassetrinn].push({
     foresattNavn,
     foresattEmail,
-    samtykkeDele: samtykkeDele === "on",
-    bekreftet: Status === "Confirmed",
+    samtykkeDele,
+    bekreftet,
   });
 }
 

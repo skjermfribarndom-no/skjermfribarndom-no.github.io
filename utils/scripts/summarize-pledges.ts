@@ -1,10 +1,6 @@
-import jsonPledges from "../tmp/pledges.json" assert { type: "json" };
 import { fylker, kommuner, skoler } from "../../static/data.js";
-import {
-  KlassetrinnType,
-  PledgeMap,
-  SchoolPledgeMap,
-} from "../../static/pledgeData.js";
+import { PledgeMap, SchoolPledgeMap } from "../../static/pledgeData.js";
+import { readPledges } from "./read-pledges.js";
 
 const pledgesByFylke = Object.fromEntries(
   fylker.map(([k, v]) => [k, { navn: v, kommuner: {} }]),
@@ -19,29 +15,17 @@ const skolerPerOrgnr = new Map(
     { fylkesnummer, kommunenummer, navn, orgnr },
   ]),
 );
-const data: {
-  "Skole orgnr": string;
-  Skole: string;
-  Klassetrinn: KlassetrinnType;
-  Registrert: string;
-}[] = jsonPledges as any;
 
 const summary: SchoolPledgeMap = {};
 
-for (const { "Skole orgnr": orgnr, Klassetrinn, Registrert } of data) {
-  if (!summary[orgnr]) summary[orgnr] = { total: 0, perKlassetrinn: {} };
+let pledges = readPledges();
+for (const { skoleOrgnr, klassetrinn } of pledges) {
+  if (!summary[skoleOrgnr])
+    summary[skoleOrgnr] = { total: 0, perKlassetrinn: {} };
 
-  let trinn = parseInt(Klassetrinn);
-  const registrert = new Date(Registrert);
-  if (registrert.getTime() < new Date(2024, 8, 18).getTime()) {
-    if (++trinn > 10) {
-      continue;
-    }
-  }
-  const klassetrinn = trinn.toString() as KlassetrinnType;
-  summary[orgnr].total++;
-  summary[orgnr].perKlassetrinn[klassetrinn] ||= 0;
-  summary[orgnr].perKlassetrinn[klassetrinn]++;
+  summary[skoleOrgnr].total++;
+  summary[skoleOrgnr].perKlassetrinn[klassetrinn] ||= 0;
+  summary[skoleOrgnr].perKlassetrinn[klassetrinn]++;
 }
 
 const schools = Object.fromEntries(
@@ -65,7 +49,12 @@ Object.entries(schools).forEach(([orgnr, data]) => {
 console.log(
   "const pledges = " +
     JSON.stringify(
-      { date: new Date(), pledgeCount: data.length, schools, pledgesByFylke },
+      {
+        date: new Date(),
+        pledgeCount: pledges.length,
+        schools,
+        pledgesByFylke,
+      },
       null,
       2,
     ),
