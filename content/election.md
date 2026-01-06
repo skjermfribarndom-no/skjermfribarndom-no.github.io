@@ -1,7 +1,7 @@
 ---
 title: Stortingsvalg 2025
 type: page
-menu: main
+unlisted: true
 ---
 
 # Velkommen til partiguiden vår 🎲
