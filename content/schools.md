@@ -7,7 +7,7 @@ featured_image: '/images/Group-work-of-school-children,-students-discuss-a-colle
 
 Når fem familier på samme trinn signerer #venttil13-løftet (foreldreløftet), blir løftet aktivt. Foreldre som har samtykket, kobles sammen slik at flere kan vente med smarttelefon i fellesskap og redusere presset i klassen.
 
-2214 familier har signert foreldreløftet nasjonalt.
+{{< pledgeCount >}} familier har signert foreldreløftet nasjonalt.
 Mange klasser er allerede i gang – andre er svært nær.
 
 Foreldreløftet og oversikten over aktive løfter drives på frivillig basis. I perioder kan matching og oppdateringer ta noe tid.
@@ -23,4 +23,5 @@ Mange skoler er svært nær – ofte mangler det bare én eller to signaturer.
 
 Vil du se ditt barns skole på listen?
 Signer #venttil13 / foreldreløftet og del det med andre foresatte. Når foreldre venter sammen, blir det lettere for barna.
-{{< pledgeSummary >}
+
+{{< pledgeTable >}}
