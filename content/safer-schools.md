@@ -9,7 +9,7 @@ Likevel får mange barn fortsatt med seg nettbrett og PC-er hjem uten tilstrekke
 Selv om kunnskapsministeren har vært tydelig på ansvaret ved å sende et brev til alle landets kommuner om dette, blir ikke dette alltid fulgt opp lokalt. Skjermfri Barndom har derfor laget denne veiledningen for å vise hvordan foreldre, FAU og lokalpolitikere kan sørge for at brevet fra kunnskapsministeren faktisk etterleves i praksis i egen kommune.
 
 ## Enkel oppskrift: Slik følger du opp i praksis
-Her finner du en verktøykasse med bakgrunn, ferdige e-poster, innbyggerspørsmål og politikerforslag: [https://drive.google.com/drive/folders/](https://drive.google.com/drive/folders/1YJE2tkYfsUQwEsOWwDumUApwL7yNALku)
+Her finner du en verktøykasse med selve brevet, gjennomslag fra andre kommuner, bakgrunn, ferdige e-poster, innbyggerspørsmål og politikerforslag med mer: [https://drive.google.com/drive/folders/](https://drive.google.com/drive/folders/1YJE2tkYfsUQwEsOWwDumUApwL7yNALku)
 
 Kommunen kan hevde at skoleenheter er «sikre nok». Derfor er det viktig å sjekke hvordan de faktisk fungerer i praksis.
 
