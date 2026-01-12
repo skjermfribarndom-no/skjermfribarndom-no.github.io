@@ -10,8 +10,9 @@ Se vår enkle oppskrift lenger ned for hva foreldre, FAU og lokalpolitikere kan 
 ## Hvorfor dette haster
 Barn skal ikke møte vold, porno eller uønsket kontakt gjennom skolens digitale utstyr.
 Likevel har mange barn de siste ti årene fått med seg nettbrett og PC-er hjem uten nødvendige internettfiltre – og blitt eksponert for grovt og skadelig innhold.
+
 Skjermfri Barndom jobber for en tryggere digital oppvekst, både ved å utsette barns møte med smarttelefon og sosiale medier, og ved å sikre trygge digitale skoleverktøy.
-I dag varierer beskyttelsen barn får fra kommune til kommune. Derfor arbeider vi for å få på plass en # nasjonal standard for digitale skoleenheter, slik at barn får lik beskyttelse uavhengig av hvor de bor. 
+I dag varierer beskyttelsen barn får fra kommune til kommune. Derfor arbeider vi for å få på plass en **nasjonal standard for digitale skoleenheter**, slik at barn får lik beskyttelse uavhengig av hvor de bor. 
 
 Signer [oppropet for en trygg digital skolehverdag](https://www.opprop.net/tryggebarn).
 
