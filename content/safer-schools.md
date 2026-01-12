@@ -13,7 +13,7 @@ Likevel har mange barn de siste ti årene fått med seg nettbrett og PC-er hjem 
 Skjermfri Barndom jobber for en tryggere digital oppvekst, både ved å utsette barns møte med smarttelefon og sosiale medier, og ved å sikre trygge digitale skoleverktøy.
 I dag varierer beskyttelsen barn får fra kommune til kommune. Derfor arbeider vi for å få på plass en # nasjonal standard for digitale skoleenheter, slik at barn får lik beskyttelse uavhengig av hvor de bor. 
 
-Signer [oppropet for en trygg digital skolehverdag](www.opprop.net/tryggebarn).
+Signer [oppropet for en trygg digital skolehverdag](https://www.opprop.net/tryggebarn).
 
 ## Nasjonale skjermråd – viktig, men ikke nok
 I januar 2026 lanserte Helsedirektoratet nye skjermråd.
