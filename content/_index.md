@@ -31,4 +31,4 @@ Vi har også tatt initiativ til et opprop for en nasjonal standard for digitale 
 
 Signer oppropet for [trygge skoleskjermer](https://www.opprop.net/tryggebarn)
 
-**Følg oss på Instagram og Facebook for erfaringer, oppdateringer og tips fra foreldre over hele landet: Skjermfri Barndom**
+Følg oss på Instagram og Facebook for erfaringer, oppdateringer og tips fra foreldre over hele landet: Skjermfri Barndom
