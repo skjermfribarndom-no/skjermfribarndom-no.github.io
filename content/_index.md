@@ -7,8 +7,6 @@ cascade:
 # For en tryggere og mer skjermbevisst oppvekst
 Skjermfri Barndom samler foreldre som vil utsette smarttelefon (gjennom [foreldreløftet #venttil13](/pledge)) og sosiale medier, og som ønsker tydelige rammer for skolens digitale verktøy.
 
-Vi er en foreldredrevet, ideell organisasjon som jobber med to ulike områder i barns digitale hverdag.
-
 ## Foreldreløftet #venttil13
 Gjennom #venttil13 skaper vi et fellesskap som gjør det enklere å stå sammen om å vente.
 Ved å signere får du: 
@@ -21,13 +19,16 @@ Smarttelefoner og sosiale medier kan eksponere barn for skadelig innhold og før
 [Trykk her](/pledge) for mer info om løftet.
 
 ## Skjerm i skolen
-Vi deler informasjon og verktøy for hvordan foreldre og FAU kan følge opp kommunens ansvar når skoleenheter har åpent internett eller ikke er godt nok sikret.
+Vi deler informasjon og verktøy som viser hvordan foreldre og foresatte, FAU og lokalpolitikere kan følge opp kommunens ansvar når skoleenheter har åpent internett eller ikke er tilstrekkelig sikret.
 
-Her finner du:
+[Trykk her for å finne informasjon om](https://skjermfribarndom.no/safer-schools/)
 - når skoleenheter ikke skal sendes med elever hjem
-- hvordan foreldre kan be om at skoleskjermen blir igjen på skolen
-- ferdige spørsmål og tekst til skole, FAU og kommune
+- hvordan foreldre og foresatte kan be om at skoleskjermen blir igjen på skolen
+- steg-for-steg-veiledninger for videre oppfølging
 
-Innholdet gjelder barns sikkerhet, nettilgang og skoleeiers ansvar – ikke generell skjermbruk i undervisningen.
+### Opprop for trygge skoleskjermer
+Vi har også tatt initiativ til et opprop for en nasjonal standard for digitale skoleenheter. I dag varierer sikringen av skoleskjermer fra kommune til kommune, og barn får ulik beskyttelse basert på postnummer. Vi krever lik praksis i hele Norge. 
 
-**Følg oss på Instagram og på Facebook der vi deler inspirerende historier og tips: **skjermfr barndom**
+Signer oppropet for [trygge skoleskjermer](https://www.opprop.net/tryggebarn)
+
+**Følg oss på Instagram og Facebook for erfaringer, oppdateringer og tips fra foreldre over hele landet: Skjermfri Barndom**
