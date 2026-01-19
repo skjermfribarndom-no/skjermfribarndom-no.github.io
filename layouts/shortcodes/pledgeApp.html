@@ -1,12 +1,8 @@
 <form
   action='{{getenv "HUGO_CLOUDFLARE_URL" | default "https://skjermfribarndom.skjermfribarndom.workers.dev"}}/submit'
-  onsubmit="
-    onSubmit();
-    return false;
-  "
+  onsubmit="onSubmit(); return false;"
   class="pledge"
   id="pledgeForm"
-  method="post"
 >
   <fieldset>
     <div class="errorMessage" style="display: none">
