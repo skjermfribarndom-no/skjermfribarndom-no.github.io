@@ -100,9 +100,8 @@
     </p>
   </fieldset>
 </form>
-<script type="module">
-  import { fylker, kommuner, skoler } from "/data.js";
-
+<script src="/data.js"></script>
+<script>
   async function onSubmit() {
     const form = document.getElementById("pledgeForm");
     const fieldset = form.querySelector("fieldset");
